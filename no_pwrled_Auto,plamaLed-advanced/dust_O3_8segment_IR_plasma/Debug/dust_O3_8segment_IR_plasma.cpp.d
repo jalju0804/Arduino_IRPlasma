@@ -1,0 +1,34 @@
+C:\Users\dlcks\AppData\Local\Temp\VMBuilds\dust_O3_8segment_IR_plasma\MiniCore_328\Debug\dust_O3_8segment_IR_plasma.cpp.o: \
+ C:\Users\dlcks\AppData\Local\Temp\VMBuilds\dust_O3_8segment_IR_plasma\MiniCore_328\Debug\dust_O3_8segment_IR_plasma.cpp \
+ C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1\cores\MCUdude_corefiles/arduino.h \
+ C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1\cores\MCUdude_corefiles/binary.h \
+ C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1\cores\MCUdude_corefiles/WCharacter.h \
+ C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1\cores\MCUdude_corefiles/WString.h \
+ C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1\cores\MCUdude_corefiles/HardwareSerial.h \
+ C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1\cores\MCUdude_corefiles/Stream.h \
+ C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1\cores\MCUdude_corefiles/Print.h \
+ C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1\cores\MCUdude_corefiles/Printable.h \
+ C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1\cores\MCUdude_corefiles/USBAPI.h \
+ C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1\cores\MCUdude_corefiles/Arduino.h \
+ C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1\cores\MCUdude_corefiles/wiring_extras.h \
+ C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1\variants\standard/pins_arduino.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Extensions\ejiwfyoc.ucr\Micro\ Platforms\default\debuggers\VM_DBG/VM_DBG.h \
+ C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1\cores\MCUdude_corefiles/Arduino.h \
+ C:\Users\dlcks\Documents\Arduino\libraries\MQ131_gas_sensor-1.5.2\src/MQ131.h \
+ C:\Users\dlcks\Documents\Arduino\libraries\IRremote-3.3.0\src/IRremote.h \
+ C:\Users\dlcks\Documents\Arduino\libraries\IRremote-3.3.0\src/IRremoteInt.h \
+ C:\Users\dlcks\Documents\Arduino\libraries\IRremote-3.3.0\src/IRProtocol.h \
+ C:\Users\dlcks\Documents\Arduino\libraries\IRremote-3.3.0\src/private/IRTimer.cpp.h \
+ C:\Users\dlcks\Documents\Arduino\libraries\IRremote-3.3.0\src/IRFeedbackLED.cpp.h \
+ C:\Users\dlcks\Documents\Arduino\libraries\IRremote-3.3.0\src/private/IRFeedbackLEDDefs.h \
+ C:\Users\dlcks\Documents\Arduino\libraries\IRremote-3.3.0\src/IRReceive.cpp.h \
+ C:\Users\dlcks\Documents\Arduino\libraries\IRremote-3.3.0\src/IRSend.cpp.h \
+ C:\Users\dlcks\Documents\Arduino\libraries\AM1008W_K_I2C-1.0.0\src/am1008w_k_i2c.h \
+ C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1\libraries\Wire\src/Wire.h \
+ C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1\cores\MCUdude_corefiles/Stream.h \
+ C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1\libraries\Wire\src/Wire_timeout.h \
+ C:\Users\dlcks\Documents\Arduino\libraries\TM16xx_LEDs_and_Buttons-0.5.2110\src/TM16xx.h \
+ C:\Users\dlcks\Documents\Arduino\libraries\TM16xx_LEDs_and_Buttons-0.5.2110\src/TM16xxFonts.h \
+ C:\Users\dlcks\Documents\Arduino\libraries\TM16xx_LEDs_and_Buttons-0.5.2110\src/TM1650.h \
+ C:\Users\dlcks\Documents\Arduino\libraries\TM16xx_LEDs_and_Buttons-0.5.2110\src/TM16xx.h \
+ C:\Users\dlcks\AppData\Local\Temp\VMBuilds\dust_O3_8segment_IR_plasma\MiniCore_328\Debug\PinMap.h
