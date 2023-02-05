@@ -1,0 +1,18 @@
+/*
+ * dust_O3_8segment_IR_plasma.cpp
+ *
+ * Created: 2023-02-02 오전 1:58:13
+ * Author : dlcks
+ */ 
+
+#include <avr/io.h>
+
+
+int main(void)
+{
+    /* Replace with your application code */
+    while (1) 
+    {
+    }
+}
+
