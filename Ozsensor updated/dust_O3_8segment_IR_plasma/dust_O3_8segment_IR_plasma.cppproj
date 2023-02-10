@@ -70,19 +70,16 @@
   <avrgcc.compiler.directories.IncludePaths>
     <ListValues>
       <Value>../../../dust_O3_8segment_IR_plasma</Value>
+      <Value>C:/Users/dlcks/Documents/Arduino/libraries/IRremote-4.0.0/src</Value>
       <Value>C:/Users/dlcks/Documents/Arduino/libraries/MQ131_gas_sensor-1.5.2/src</Value>
-      <Value>C:/Users/dlcks/Documents/Arduino/libraries/IRremote-3.3.0/src</Value>
       <Value>C:/Users/dlcks/Documents/Arduino/libraries/AM1008W_K_I2C-1.0.0/src</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src</Value>
       <Value>C:/Users/dlcks/Documents/Arduino/libraries/TM16xx_LEDs_and_Buttons-0.5.2110/src</Value>
       <Value>C:/Users/dlcks/Documents/Arduino/libraries/Adafruit_GFX_Library-1.11.5</Value>
       <Value>C:/Users/dlcks/Documents/Arduino/libraries/Adafruit_BusIO</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/SPI/src</Value>
-      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src/utility</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles/travis-ci</Value>
-      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/variants/standard</Value>
-      <Value>C:/Users/dlcks/DOCUME~1/ATMELS~1/7.0/DUST_O~2/DUST_O~1</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7//lib/gcc/avr/7.3.0/include</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include-fixed</Value>
@@ -116,19 +113,16 @@
   <avrgcccpp.compiler.directories.IncludePaths>
     <ListValues>
       <Value>../../../dust_O3_8segment_IR_plasma</Value>
+      <Value>C:/Users/dlcks/Documents/Arduino/libraries/IRremote-4.0.0/src</Value>
       <Value>C:/Users/dlcks/Documents/Arduino/libraries/MQ131_gas_sensor-1.5.2/src</Value>
-      <Value>C:/Users/dlcks/Documents/Arduino/libraries/IRremote-3.3.0/src</Value>
       <Value>C:/Users/dlcks/Documents/Arduino/libraries/AM1008W_K_I2C-1.0.0/src</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src</Value>
       <Value>C:/Users/dlcks/Documents/Arduino/libraries/TM16xx_LEDs_and_Buttons-0.5.2110/src</Value>
       <Value>C:/Users/dlcks/Documents/Arduino/libraries/Adafruit_GFX_Library-1.11.5</Value>
       <Value>C:/Users/dlcks/Documents/Arduino/libraries/Adafruit_BusIO</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/SPI/src</Value>
-      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src/utility</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles/travis-ci</Value>
-      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/variants/standard</Value>
-      <Value>C:/Users/dlcks/DOCUME~1/ATMELS~1/7.0/DUST_O~2/DUST_O~1</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7//lib/gcc/avr/7.3.0/include</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include-fixed</Value>
@@ -667,28 +661,41 @@ stk500.program.protocol=stk500
 stk500.program.tool=avrdude
 stk500.program.extra_params=-P {serial.port}
 compiler.libraries.ldflags=
-tools.avrdude.network_cmd={runtime.tools.arduinoOTA.path}/bin/arduinoOTA
+pluggable_discovery.required.0=builtin:serial-discovery
+pluggable_discovery.required.1=builtin:mdns-discovery
+pluggable_monitor.required.serial=builtin:serial-monitor
 tools.avrdude.program.verify=
+tools.avrdude.network_cmd={runtime.tools.arduinoOTA.path}/bin/arduinoOTA
 tools.avrdude.upload.network_pattern="{network_cmd}" -address {serial.port} -port {upload.network.port} -sketch "{build.path}/{build.project_name}.hex" -upload {upload.network.endpoint_upload} -sync {upload.network.endpoint_sync} -reset {upload.network.endpoint_reset} -sync_exp {upload.network.sync_return}
+tools.arduino_ota.cmd={runtime.tools.arduinoOTA.path}/bin/arduinoOTA
+tools.arduino_ota.upload.pattern="{cmd}" -address {upload.port.address} -port {upload.port.properties.port} -sketch "{build.path}/{build.project_name}.hex" -upload {upload.port.properties.endpoint_upload} -sync {upload.port.properties.endpoint_sync} -reset {upload.port.properties.endpoint_reset} -sync_exp {upload.port.properties.sync_return}
 avrisp.name=AVR ISP
 avrisp.communication=serial
 avrisp.protocol=stk500v1
 avrisp.program.protocol=stk500v1
 avrisp.program.tool=avrdude
+avrisp.program.tool.default=avrdude
 avrisp.program.extra_params=-P{serial.port}
+avrispmkii.program.tool.default=avrdude
+usbtinyisp.program.tool.default=avrdude
 arduinoisp.name=ArduinoISP
 arduinoisp.protocol=arduinoisp
 arduinoisp.program.tool=avrdude
+arduinoisp.program.tool.default=avrdude
 arduinoisp.program.extra_params=
 arduinoisporg.name=ArduinoISP.org
 arduinoisporg.protocol=arduinoisporg
 arduinoisporg.program.tool=avrdude
+arduinoisporg.program.tool.default=avrdude
 arduinoisporg.program.extra_params=
+usbasp.program.tool.default=avrdude
 parallel.name=Parallel Programmer
 parallel.protocol=dapa
 parallel.force=true
 parallel.program.tool=avrdude
+parallel.program.tool.default=avrdude
 parallel.program.extra_params=-F
+arduinoasisp.program.tool.default=avrdude
 arduinoasispatmega32u4.name=Arduino as ISP (ATmega32U4)
 arduinoasispatmega32u4.communication=serial
 arduinoasispatmega32u4.protocol=arduino
@@ -696,10 +703,12 @@ arduinoasispatmega32u4.speed=19200
 arduinoasispatmega32u4.program.protocol=arduino
 arduinoasispatmega32u4.program.speed=19200
 arduinoasispatmega32u4.program.tool=avrdude
+arduinoasispatmega32u4.program.tool.default=avrdude
 arduinoasispatmega32u4.program.extra_params=-P{serial.port} -b{program.speed}
 usbGemma.name=Arduino Gemma
 usbGemma.protocol=arduinogemma
 usbGemma.program.tool=avrdude
+usbGemma.program.tool.default=avrdude
 usbGemma.program.extra_params=
 usbGemma.config.path={runtime.platform.path}/bootloaders/gemma/avrdude.conf
 buspirate.name=BusPirate as ISP
@@ -707,19 +716,24 @@ buspirate.communication=serial
 buspirate.protocol=buspirate
 buspirate.program.protocol=buspirate
 buspirate.program.tool=avrdude
+buspirate.program.tool.default=avrdude
 buspirate.program.extra_params=-P{serial.port}
+stk500.program.tool.default=avrdude
 jtag3isp.name=Atmel JTAGICE3 (ISP mode)
 jtag3isp.communication=usb
 jtag3isp.protocol=jtag3isp
 jtag3isp.program.protocol=jtag3isp
 jtag3isp.program.tool=avrdude
+jtag3isp.program.tool.default=avrdude
 jtag3isp.program.extra_params=
 jtag3.name=Atmel JTAGICE3 (JTAG mode)
 jtag3.communication=usb
 jtag3.protocol=jtag3
 jtag3.program.protocol=jtag3
 jtag3.program.tool=avrdude
+jtag3.program.tool.default=avrdude
 jtag3.program.extra_params=-B0.1
+atmel_ice.program.tool.default=avrdude
 medbg.name=Atmel mEDBG
 medbg.communication=usb
 medbg.protocol=stk500v2
@@ -732,8 +746,15 @@ runtime.tools.avrdude.path=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniC
 runtime.tools.avrdude-7.1-arduino.1.path=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\tools\avrdude\7.1-arduino.1
 runtime.tools.arduinoOTA.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\arduinoOTA\1.3.0
 runtime.tools.arduinoOTA-1.3.0.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\arduinoOTA\1.3.0
-runtime.tools.avrdude-6.3.0-arduino17.path=c:\arduino-1.8.19-windows\arduino-1.8.19\hardware\tools\avr
-runtime.tools.tools-avr.path=c:\arduino-1.8.19-windows\arduino-1.8.19\hardware\tools\avr
+runtime.tools.avrdude-6.3.0-arduino17.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\avrdude\6.3.0-arduino17
+runtime.tools.ctags.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\ctags\5.8-arduino11
+runtime.tools.ctags-5.8-arduino11.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\ctags\5.8-arduino11
+runtime.tools.mdns-discovery.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\mdns-discovery\1.0.6
+runtime.tools.mdns-discovery-1.0.6.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\mdns-discovery\1.0.6
+runtime.tools.serial-discovery.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\serial-discovery\1.3.3
+runtime.tools.serial-discovery-1.3.3.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\serial-discovery\1.3.3
+runtime.tools.serial-monitor.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\serial-monitor\0.12.0
+runtime.tools.serial-monitor-0.12.0.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\serial-monitor\0.12.0
 runtime.vm.boardinfo.id=MiniCore_328
 runtime.vm.boardinfo.name=MiniCore_328
 runtime.vm.boardinfo.desc=ATmega328
@@ -819,25 +840,48 @@ vm.boardsource.path=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\har
 runtime.platform.path=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1
 vm.platformname.name=avr
 build.arch=AVR
+vm.sketch_ino_cpp_name=dust_O3_8segment_IR_plasma.cpp
+builder.noino=false
+tools.ctags.path={runtime.tools.ctags.path}
+tools.ctags.cmd.path={path}/ctags
+tools.ctags.pattern="{cmd.path}" -u --language-force=c++ -f - --c++-kinds=svpf --fields=KSTtzns --line-directives "{source_file}"
+preproc.defines.flags=-w -x c++ -E -dM
+build.architecture=7.3.0-atmel3.6.1-arduino7
+vmresolved.compiler.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\bin\
+vmresolved.tools.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7
+debug.tool=universal
+upload.speed=115200
+bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+build.clkpr=
+build.clock_speed={build.f_cpu}
+build.f_cpu=16000000L
+bootloader.extended_fuses=0b1111{bootloader.cfd_bit}101
+bootloader.eesave_bit=0
+ltoarcmd=avr-ar
+bootloader.cksel_bits=0111
+bootloader.cfd_bit=1
+build.variant=standard
+build.mcu=atmega328p
+upload.maximum_size=32256
+upload.protocol=arduino
+upload.port=UART0
+build.export_merged_output=true
+bootloader.high_fuses=0b1101{bootloader.eesave_bit}110
+bootloader.file=optiboot_flash/bootloaders/{build.mcu}/{build.clock_speed}/optiboot_flash_{build.mcu}_{upload.port}_{upload.speed}_{build.clock_speed}_{build.bootloader_led}.hex
 </arduino.board.property_bag>
-        <arduino.build.mcu>
-        </arduino.build.mcu>
-        <arduino.build.f_cpu>
-        </arduino.build.f_cpu>
+        <arduino.build.mcu>atmega328p</arduino.build.mcu>
+        <arduino.build.f_cpu>16000000L</arduino.build.f_cpu>
         <arduino.build.core>MCUdude_corefiles</arduino.build.core>
-        <arduino.upload.protocol>
-        </arduino.upload.protocol>
-        <arduino.upload.speed>
-        </arduino.upload.speed>
-        <arduino.upload.maximum_size>
-        </arduino.upload.maximum_size>
+        <arduino.upload.protocol>arduino</arduino.upload.protocol>
+        <arduino.upload.speed>115200</arduino.upload.speed>
+        <arduino.upload.maximum_size>32256</arduino.upload.maximum_size>
         <visualmicro.application.name>arduino16x</visualmicro.application.name>
         <visualmicro.package.name>MiniCore</visualmicro.package.name>
         <visualmicro.platform.name>avr</visualmicro.platform.name>
         <config.Debug.customdebug_pro_8MHzatmega328_debugger_type>universal</config.Debug.customdebug_pro_8MHzatmega328_debugger_type>
       </VisualMicroSettings>
     </VisualMicroSettings>
-    <VMSETTING_IncludePaths>../../../dust_O3_8segment_IR_plasma;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles/travis-ci;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7//lib/gcc/avr/7.3.0/include;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include-fixed;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.2/include;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.3/include;{vm.intellisense.add-paths};C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/variants/standard;C:/Users/dlcks/Documents/Arduino/libraries/IRremote-3.3.0/src;C:/Users/dlcks/Documents/Arduino/libraries/AM1008W_K_I2C-1.0.0/src;C:/Users/dlcks/Documents/Arduino/libraries/TM16xx_LEDs_and_Buttons-0.5.2110/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src;C:/Users/dlcks/Documents/Arduino/libraries/Adafruit_GFX_Library-1.11.5;C:/Users/dlcks/Documents/Arduino/libraries/Adafruit_BusIO;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/SPI/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src/utility;C:/Users/dlcks/DOCUME~1/ATMELS~1/7.0/DUST_O~2/DUST_O~1;C:/Users/dlcks/Documents/Arduino/libraries/MsTimer2-1.1.0;C:/Users/dlcks/Documents/Arduino/libraries/wimleers-flexitimer2-7338cfb;C:/Users/dlcks/Documents/Arduino/libraries/TM1650-1.1.0/src;c:/arduino-1.8.19-windows/arduino-1.8.19/hardware/arduino/avr/cores/arduino;c:/arduino-1.8.19-windows/arduino-1.8.19/hardware/arduino/avr/variants/eightanaloginputs;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/libraries/Wire/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/libraries/SPI/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/cores/MCUdude_corefiles;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/cores/MCUdude_corefiles/travis-ci;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/variants/standard;C:/Users/dlcks/Documents/Arduino/libraries/IRremote-4.0.0/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/libraries/Wire/src/utility;C:/Users/dlcks/Documents/Arduino/libraries/MQ131_gas_sensor-1.5.2/src;</VMSETTING_IncludePaths>
+    <VMSETTING_IncludePaths>../../../dust_O3_8segment_IR_plasma;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles/travis-ci;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7//lib/gcc/avr/7.3.0/include;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include-fixed;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.2/include;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.3/include;{vm.intellisense.add-paths};C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/variants/standard;C:/Users/dlcks/Documents/Arduino/libraries/IRremote-3.3.0/src;C:/Users/dlcks/Documents/Arduino/libraries/AM1008W_K_I2C-1.0.0/src;C:/Users/dlcks/Documents/Arduino/libraries/TM16xx_LEDs_and_Buttons-0.5.2110/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src;C:/Users/dlcks/Documents/Arduino/libraries/Adafruit_GFX_Library-1.11.5;C:/Users/dlcks/Documents/Arduino/libraries/Adafruit_BusIO;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/SPI/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src/utility;C:/Users/dlcks/DOCUME~1/ATMELS~1/7.0/DUST_O~2/DUST_O~1;C:/Users/dlcks/Documents/Arduino/libraries/MsTimer2-1.1.0;C:/Users/dlcks/Documents/Arduino/libraries/wimleers-flexitimer2-7338cfb;C:/Users/dlcks/Documents/Arduino/libraries/TM1650-1.1.0/src;c:/arduino-1.8.19-windows/arduino-1.8.19/hardware/arduino/avr/cores/arduino;c:/arduino-1.8.19-windows/arduino-1.8.19/hardware/arduino/avr/variants/eightanaloginputs;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/libraries/Wire/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/libraries/SPI/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/cores/MCUdude_corefiles;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/cores/MCUdude_corefiles/travis-ci;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/variants/standard;C:/Users/dlcks/Documents/Arduino/libraries/IRremote-4.0.0/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/libraries/Wire/src/utility;C:/Users/dlcks/Documents/Arduino/libraries/MQ131_gas_sensor-1.5.2/src;c:/arduino-1.8.19-windows/arduino-1.8.19/hardware/arduino/avr/libraries/Wire/src;c:/arduino-1.8.19-windows/arduino-1.8.19/hardware/arduino/avr/libraries/SPI/src;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.6/variants/eightanaloginputs;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.6/libraries/Wire/src;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.6/libraries/SPI/src;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.6/libraries/Wire/src/utility;C:/Users/dlcks/Desktop/아두이노/7SEGME~1/ver/OZSENS~1/DUST_O~1;</VMSETTING_IncludePaths>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <ToolchainSettings>
@@ -866,19 +910,16 @@ build.arch=AVR
   <avrgcc.compiler.directories.IncludePaths>
     <ListValues>
       <Value>../../../dust_O3_8segment_IR_plasma</Value>
+      <Value>C:/Users/dlcks/Documents/Arduino/libraries/IRremote-4.0.0/src</Value>
       <Value>C:/Users/dlcks/Documents/Arduino/libraries/MQ131_gas_sensor-1.5.2/src</Value>
-      <Value>C:/Users/dlcks/Documents/Arduino/libraries/IRremote-3.3.0/src</Value>
       <Value>C:/Users/dlcks/Documents/Arduino/libraries/AM1008W_K_I2C-1.0.0/src</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src</Value>
       <Value>C:/Users/dlcks/Documents/Arduino/libraries/TM16xx_LEDs_and_Buttons-0.5.2110/src</Value>
       <Value>C:/Users/dlcks/Documents/Arduino/libraries/Adafruit_GFX_Library-1.11.5</Value>
       <Value>C:/Users/dlcks/Documents/Arduino/libraries/Adafruit_BusIO</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/SPI/src</Value>
-      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src/utility</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles/travis-ci</Value>
-      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/variants/standard</Value>
-      <Value>C:/Users/dlcks/DOCUME~1/ATMELS~1/7.0/DUST_O~2/DUST_O~1</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7//lib/gcc/avr/7.3.0/include</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include-fixed</Value>
@@ -912,19 +953,16 @@ build.arch=AVR
   <avrgcccpp.compiler.directories.IncludePaths>
     <ListValues>
       <Value>../../../dust_O3_8segment_IR_plasma</Value>
+      <Value>C:/Users/dlcks/Documents/Arduino/libraries/IRremote-4.0.0/src</Value>
       <Value>C:/Users/dlcks/Documents/Arduino/libraries/MQ131_gas_sensor-1.5.2/src</Value>
-      <Value>C:/Users/dlcks/Documents/Arduino/libraries/IRremote-3.3.0/src</Value>
       <Value>C:/Users/dlcks/Documents/Arduino/libraries/AM1008W_K_I2C-1.0.0/src</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src</Value>
       <Value>C:/Users/dlcks/Documents/Arduino/libraries/TM16xx_LEDs_and_Buttons-0.5.2110/src</Value>
       <Value>C:/Users/dlcks/Documents/Arduino/libraries/Adafruit_GFX_Library-1.11.5</Value>
       <Value>C:/Users/dlcks/Documents/Arduino/libraries/Adafruit_BusIO</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/SPI/src</Value>
-      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src/utility</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles/travis-ci</Value>
-      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/variants/standard</Value>
-      <Value>C:/Users/dlcks/DOCUME~1/ATMELS~1/7.0/DUST_O~2/DUST_O~1</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7//lib/gcc/avr/7.3.0/include</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include</Value>
       <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include-fixed</Value>
@@ -1463,28 +1501,41 @@ stk500.program.protocol=stk500
 stk500.program.tool=avrdude
 stk500.program.extra_params=-P {serial.port}
 compiler.libraries.ldflags=
-tools.avrdude.network_cmd={runtime.tools.arduinoOTA.path}/bin/arduinoOTA
+pluggable_discovery.required.0=builtin:serial-discovery
+pluggable_discovery.required.1=builtin:mdns-discovery
+pluggable_monitor.required.serial=builtin:serial-monitor
 tools.avrdude.program.verify=
+tools.avrdude.network_cmd={runtime.tools.arduinoOTA.path}/bin/arduinoOTA
 tools.avrdude.upload.network_pattern="{network_cmd}" -address {serial.port} -port {upload.network.port} -sketch "{build.path}/{build.project_name}.hex" -upload {upload.network.endpoint_upload} -sync {upload.network.endpoint_sync} -reset {upload.network.endpoint_reset} -sync_exp {upload.network.sync_return}
+tools.arduino_ota.cmd={runtime.tools.arduinoOTA.path}/bin/arduinoOTA
+tools.arduino_ota.upload.pattern="{cmd}" -address {upload.port.address} -port {upload.port.properties.port} -sketch "{build.path}/{build.project_name}.hex" -upload {upload.port.properties.endpoint_upload} -sync {upload.port.properties.endpoint_sync} -reset {upload.port.properties.endpoint_reset} -sync_exp {upload.port.properties.sync_return}
 avrisp.name=AVR ISP
 avrisp.communication=serial
 avrisp.protocol=stk500v1
 avrisp.program.protocol=stk500v1
 avrisp.program.tool=avrdude
+avrisp.program.tool.default=avrdude
 avrisp.program.extra_params=-P{serial.port}
+avrispmkii.program.tool.default=avrdude
+usbtinyisp.program.tool.default=avrdude
 arduinoisp.name=ArduinoISP
 arduinoisp.protocol=arduinoisp
 arduinoisp.program.tool=avrdude
+arduinoisp.program.tool.default=avrdude
 arduinoisp.program.extra_params=
 arduinoisporg.name=ArduinoISP.org
 arduinoisporg.protocol=arduinoisporg
 arduinoisporg.program.tool=avrdude
+arduinoisporg.program.tool.default=avrdude
 arduinoisporg.program.extra_params=
+usbasp.program.tool.default=avrdude
 parallel.name=Parallel Programmer
 parallel.protocol=dapa
 parallel.force=true
 parallel.program.tool=avrdude
+parallel.program.tool.default=avrdude
 parallel.program.extra_params=-F
+arduinoasisp.program.tool.default=avrdude
 arduinoasispatmega32u4.name=Arduino as ISP (ATmega32U4)
 arduinoasispatmega32u4.communication=serial
 arduinoasispatmega32u4.protocol=arduino
@@ -1492,10 +1543,12 @@ arduinoasispatmega32u4.speed=19200
 arduinoasispatmega32u4.program.protocol=arduino
 arduinoasispatmega32u4.program.speed=19200
 arduinoasispatmega32u4.program.tool=avrdude
+arduinoasispatmega32u4.program.tool.default=avrdude
 arduinoasispatmega32u4.program.extra_params=-P{serial.port} -b{program.speed}
 usbGemma.name=Arduino Gemma
 usbGemma.protocol=arduinogemma
 usbGemma.program.tool=avrdude
+usbGemma.program.tool.default=avrdude
 usbGemma.program.extra_params=
 usbGemma.config.path={runtime.platform.path}/bootloaders/gemma/avrdude.conf
 buspirate.name=BusPirate as ISP
@@ -1503,19 +1556,24 @@ buspirate.communication=serial
 buspirate.protocol=buspirate
 buspirate.program.protocol=buspirate
 buspirate.program.tool=avrdude
+buspirate.program.tool.default=avrdude
 buspirate.program.extra_params=-P{serial.port}
+stk500.program.tool.default=avrdude
 jtag3isp.name=Atmel JTAGICE3 (ISP mode)
 jtag3isp.communication=usb
 jtag3isp.protocol=jtag3isp
 jtag3isp.program.protocol=jtag3isp
 jtag3isp.program.tool=avrdude
+jtag3isp.program.tool.default=avrdude
 jtag3isp.program.extra_params=
 jtag3.name=Atmel JTAGICE3 (JTAG mode)
 jtag3.communication=usb
 jtag3.protocol=jtag3
 jtag3.program.protocol=jtag3
 jtag3.program.tool=avrdude
+jtag3.program.tool.default=avrdude
 jtag3.program.extra_params=-B0.1
+atmel_ice.program.tool.default=avrdude
 medbg.name=Atmel mEDBG
 medbg.communication=usb
 medbg.protocol=stk500v2
@@ -1528,8 +1586,15 @@ runtime.tools.avrdude.path=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniC
 runtime.tools.avrdude-7.1-arduino.1.path=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\tools\avrdude\7.1-arduino.1
 runtime.tools.arduinoOTA.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\arduinoOTA\1.3.0
 runtime.tools.arduinoOTA-1.3.0.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\arduinoOTA\1.3.0
-runtime.tools.avrdude-6.3.0-arduino17.path=c:\arduino-1.8.19-windows\arduino-1.8.19\hardware\tools\avr
-runtime.tools.tools-avr.path=c:\arduino-1.8.19-windows\arduino-1.8.19\hardware\tools\avr
+runtime.tools.avrdude-6.3.0-arduino17.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\avrdude\6.3.0-arduino17
+runtime.tools.ctags.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\ctags\5.8-arduino11
+runtime.tools.ctags-5.8-arduino11.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\ctags\5.8-arduino11
+runtime.tools.mdns-discovery.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\mdns-discovery\1.0.6
+runtime.tools.mdns-discovery-1.0.6.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\mdns-discovery\1.0.6
+runtime.tools.serial-discovery.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\serial-discovery\1.3.3
+runtime.tools.serial-discovery-1.3.3.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\serial-discovery\1.3.3
+runtime.tools.serial-monitor.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\serial-monitor\0.12.0
+runtime.tools.serial-monitor-0.12.0.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\serial-monitor\0.12.0
 runtime.vm.boardinfo.id=MiniCore_328
 runtime.vm.boardinfo.name=MiniCore_328
 runtime.vm.boardinfo.desc=ATmega328
@@ -1615,25 +1680,48 @@ vm.boardsource.path=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\har
 runtime.platform.path=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1
 vm.platformname.name=avr
 build.arch=AVR
+vm.sketch_ino_cpp_name=dust_O3_8segment_IR_plasma.cpp
+builder.noino=false
+tools.ctags.path={runtime.tools.ctags.path}
+tools.ctags.cmd.path={path}/ctags
+tools.ctags.pattern="{cmd.path}" -u --language-force=c++ -f - --c++-kinds=svpf --fields=KSTtzns --line-directives "{source_file}"
+preproc.defines.flags=-w -x c++ -E -dM
+build.architecture=7.3.0-atmel3.6.1-arduino7
+vmresolved.compiler.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\bin\
+vmresolved.tools.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7
+debug.tool=universal
+upload.speed=115200
+bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+build.clkpr=
+build.clock_speed={build.f_cpu}
+build.f_cpu=16000000L
+bootloader.extended_fuses=0b1111{bootloader.cfd_bit}101
+bootloader.eesave_bit=0
+ltoarcmd=avr-ar
+bootloader.cksel_bits=0111
+bootloader.cfd_bit=1
+build.variant=standard
+build.mcu=atmega328p
+upload.maximum_size=32256
+upload.protocol=arduino
+upload.port=UART0
+build.export_merged_output=true
+bootloader.high_fuses=0b1101{bootloader.eesave_bit}110
+bootloader.file=optiboot_flash/bootloaders/{build.mcu}/{build.clock_speed}/optiboot_flash_{build.mcu}_{upload.port}_{upload.speed}_{build.clock_speed}_{build.bootloader_led}.hex
 </arduino.board.property_bag>
-        <arduino.build.mcu>
-        </arduino.build.mcu>
-        <arduino.build.f_cpu>
-        </arduino.build.f_cpu>
+        <arduino.build.mcu>atmega328p</arduino.build.mcu>
+        <arduino.build.f_cpu>16000000L</arduino.build.f_cpu>
         <arduino.build.core>MCUdude_corefiles</arduino.build.core>
-        <arduino.upload.protocol>
-        </arduino.upload.protocol>
-        <arduino.upload.speed>
-        </arduino.upload.speed>
-        <arduino.upload.maximum_size>
-        </arduino.upload.maximum_size>
+        <arduino.upload.protocol>arduino</arduino.upload.protocol>
+        <arduino.upload.speed>115200</arduino.upload.speed>
+        <arduino.upload.maximum_size>32256</arduino.upload.maximum_size>
         <visualmicro.application.name>arduino16x</visualmicro.application.name>
         <visualmicro.package.name>MiniCore</visualmicro.package.name>
         <visualmicro.platform.name>avr</visualmicro.platform.name>
         <config.Debug.customdebug_pro_8MHzatmega328_debugger_type>universal</config.Debug.customdebug_pro_8MHzatmega328_debugger_type>
       </VisualMicroSettings>
     </VisualMicroSettings>
-    <VMSETTING_IncludePaths>../../../dust_O3_8segment_IR_plasma;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles/travis-ci;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7//lib/gcc/avr/7.3.0/include;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include-fixed;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.2/include;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.3/include;{vm.intellisense.add-paths};C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/variants/standard;C:/Users/dlcks/Documents/Arduino/libraries/IRremote-3.3.0/src;C:/Users/dlcks/Documents/Arduino/libraries/AM1008W_K_I2C-1.0.0/src;C:/Users/dlcks/Documents/Arduino/libraries/TM16xx_LEDs_and_Buttons-0.5.2110/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src;C:/Users/dlcks/Documents/Arduino/libraries/Adafruit_GFX_Library-1.11.5;C:/Users/dlcks/Documents/Arduino/libraries/Adafruit_BusIO;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/SPI/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src/utility;C:/Users/dlcks/DOCUME~1/ATMELS~1/7.0/DUST_O~2/DUST_O~1;C:/Users/dlcks/Documents/Arduino/libraries/MsTimer2-1.1.0;C:/Users/dlcks/Documents/Arduino/libraries/wimleers-flexitimer2-7338cfb;C:/Users/dlcks/Documents/Arduino/libraries/TM1650-1.1.0/src;c:/arduino-1.8.19-windows/arduino-1.8.19/hardware/arduino/avr/cores/arduino;c:/arduino-1.8.19-windows/arduino-1.8.19/hardware/arduino/avr/variants/eightanaloginputs;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/libraries/Wire/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/libraries/SPI/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/cores/MCUdude_corefiles;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/cores/MCUdude_corefiles/travis-ci;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/variants/standard;C:/Users/dlcks/Documents/Arduino/libraries/IRremote-4.0.0/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/libraries/Wire/src/utility;C:/Users/dlcks/Documents/Arduino/libraries/MQ131_gas_sensor-1.5.2/src;</VMSETTING_IncludePaths>
+    <VMSETTING_IncludePaths>../../../dust_O3_8segment_IR_plasma;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles/travis-ci;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7//lib/gcc/avr/7.3.0/include;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include-fixed;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.2/include;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.3/include;{vm.intellisense.add-paths};C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/variants/standard;C:/Users/dlcks/Documents/Arduino/libraries/IRremote-3.3.0/src;C:/Users/dlcks/Documents/Arduino/libraries/AM1008W_K_I2C-1.0.0/src;C:/Users/dlcks/Documents/Arduino/libraries/TM16xx_LEDs_and_Buttons-0.5.2110/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src;C:/Users/dlcks/Documents/Arduino/libraries/Adafruit_GFX_Library-1.11.5;C:/Users/dlcks/Documents/Arduino/libraries/Adafruit_BusIO;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/SPI/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src/utility;C:/Users/dlcks/DOCUME~1/ATMELS~1/7.0/DUST_O~2/DUST_O~1;C:/Users/dlcks/Documents/Arduino/libraries/MsTimer2-1.1.0;C:/Users/dlcks/Documents/Arduino/libraries/wimleers-flexitimer2-7338cfb;C:/Users/dlcks/Documents/Arduino/libraries/TM1650-1.1.0/src;c:/arduino-1.8.19-windows/arduino-1.8.19/hardware/arduino/avr/cores/arduino;c:/arduino-1.8.19-windows/arduino-1.8.19/hardware/arduino/avr/variants/eightanaloginputs;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/libraries/Wire/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/libraries/SPI/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/cores/MCUdude_corefiles;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/cores/MCUdude_corefiles/travis-ci;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/variants/standard;C:/Users/dlcks/Documents/Arduino/libraries/IRremote-4.0.0/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.0/libraries/Wire/src/utility;C:/Users/dlcks/Documents/Arduino/libraries/MQ131_gas_sensor-1.5.2/src;c:/arduino-1.8.19-windows/arduino-1.8.19/hardware/arduino/avr/libraries/Wire/src;c:/arduino-1.8.19-windows/arduino-1.8.19/hardware/arduino/avr/libraries/SPI/src;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.6/variants/eightanaloginputs;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.6/libraries/Wire/src;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.6/libraries/SPI/src;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.6/libraries/Wire/src/utility;C:/Users/dlcks/Desktop/아두이노/7SEGME~1/ver/OZSENS~1/DUST_O~1;</VMSETTING_IncludePaths>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="dust_O3_8segment_IR_plasma.ino">

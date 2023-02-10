@@ -1,0 +1,1749 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.CPP</ToolchainName>
+    <ProjectGuid>{c81eaf1a-0a54-410b-b45e-6b0db2e92897}</ProjectGuid>
+    <avrdevice>ATmega328P</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>Sketch11</AssemblyName>
+    <Name>Sketch11</Name>
+    <RootNamespace>Sketch11</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <CacheFlash>true</CacheFlash>
+    <UncachedRange />
+    <BootSegment>0</BootSegment>
+    <ExternalProgrammingToolCommand />
+    <AsfFrameworkConfig>
+      <framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.44.1" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <preserveEEPROM>true</preserveEEPROM>
+    <ResetRule>0</ResetRule>
+    <EraseKey />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.Device>-mmcu=atmega328p</avrgcc.common.Device>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__AVR_ATmega328p__</Value>
+      <Value>__AVR_ATmega328P__</Value>
+      <Value>_VMDEBUG=1</Value>
+      <Value>ARDUINO=108019</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>__AVR__</Value>
+      <Value>ARDUINO_AVR_ATmega328</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../Sketch11</Value>
+      <Value>C:/Users/dlcks/Documents/Arduino/libraries/IRremote-4.0.0/src</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src/utility</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles/travis-ci</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/variants/standard</Value>
+      <Value>C:/Users/dlcks/Desktop/아두이노/7SEGME~1/ver/Ide_test/Sketch11</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7//lib/gcc/avr/7.3.0/include</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include-fixed</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.2/include</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.3/include</Value>
+      <Value>{vm.intellisense.add-paths}</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize debugging experience (-Og)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -include=arduino.h</avrgcc.compiler.miscellaneous.OtherFlags>
+  <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__AVR_ATmega328p__</Value>
+      <Value>__AVR_ATmega328P__</Value>
+      <Value>_VMDEBUG=1</Value>
+      <Value>ARDUINO=108019</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>__AVR__</Value>
+      <Value>ARDUINO_AVR_ATmega328</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../Sketch11</Value>
+      <Value>C:/Users/dlcks/Documents/Arduino/libraries/IRremote-4.0.0/src</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src/utility</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles/travis-ci</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/variants/standard</Value>
+      <Value>C:/Users/dlcks/Desktop/아두이노/7SEGME~1/ver/Ide_test/Sketch11</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7//lib/gcc/avr/7.3.0/include</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include-fixed</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.2/include</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.3/include</Value>
+      <Value>{vm.intellisense.add-paths}</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize debugging experience (-Og)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+  <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+  <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+  <avrgcccpp.compiler.miscellaneous.OtherFlags>-include=arduino.h</avrgcccpp.compiler.miscellaneous.OtherFlags>
+  <avrgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </avrgcccpp.linker.libraries.Libraries>
+  <avrgcccpp.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
+    </ListValues>
+  </avrgcccpp.assembler.general.IncludePaths>
+  <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+</AvrGccCpp>
+    </ToolchainSettings>
+    <VisualMicroSettings>
+      <VisualMicroSettings>
+        <config.Debug.customdebug_uno_debugger_type>universal</config.Debug.customdebug_uno_debugger_type>
+        <ValidatedAS7>1</ValidatedAS7>
+        <arduino.upload.port>COM6</arduino.upload.port>
+        <arduino.board.name>MiniCore_328</arduino.board.name>
+        <arduino.board.desc>ATmega328</arduino.board.desc>
+        <arduino.board.property_bag>name=ATmega328
+upload.tool=avrdude
+upload.maximum_data_size=2048
+bootloader.tool=avrdude
+bootloader.unlock_bits=0xff
+bootloader.lock_bits=0xcf
+build.core=MCUdude_corefiles
+build.board=AVR_ATmega328
+build.bootloader_led=B5
+build.extra_flags={build.clkpr}
+menu.bootloader.uart0=Yes (UART0)
+menu.bootloader.uart0.upload.maximum_size=32256
+menu.bootloader.uart0.upload.protocol=arduino
+menu.bootloader.uart0.upload.port=UART0
+menu.bootloader.uart0.build.export_merged_output=true
+menu.bootloader.uart0.bootloader.high_fuses=0b1101{bootloader.eesave_bit}110
+menu.bootloader.uart0.bootloader.file=optiboot_flash/bootloaders/{build.mcu}/{build.clock_speed}/optiboot_flash_{build.mcu}_{upload.port}_{upload.speed}_{build.clock_speed}_{build.bootloader_led}.hex
+menu.bootloader.uart1=Yes (UART1 328PB only)
+menu.bootloader.uart1.upload.maximum_size=32256
+menu.bootloader.uart1.upload.protocol=arduino
+menu.bootloader.uart1.upload.port=UART1
+menu.bootloader.uart1.build.export_merged_output=true
+menu.bootloader.uart1.bootloader.high_fuses=0b1101{bootloader.eesave_bit}110
+menu.bootloader.uart1.bootloader.file=optiboot_flash/bootloaders/{build.mcu}/{build.clock_speed}/optiboot_flash_{build.mcu}_{upload.port}_{upload.speed}_{build.clock_speed}_{build.bootloader_led}.hex
+menu.bootloader.no_bootloader=No bootloader
+menu.bootloader.no_bootloader.upload.maximum_size=32768
+menu.bootloader.no_bootloader.build.export_merged_output=false
+menu.bootloader.no_bootloader.bootloader.high_fuses=0b1101{bootloader.eesave_bit}111
+menu.bootloader.no_bootloader.bootloader.file=empty/empty.hex
+menu.eeprom.keep=EEPROM retained
+menu.eeprom.keep.bootloader.eesave_bit=0
+menu.eeprom.erase=EEPROM not retained
+menu.eeprom.erase.bootloader.eesave_bit=1
+menu.variant.modelP=328P / 328PA
+menu.variant.modelP.bootloader.cksel_bits=0111
+menu.variant.modelP.bootloader.cfd_bit=1
+menu.variant.modelP.build.variant=standard
+menu.variant.modelP.build.mcu=atmega328p
+menu.variant.modelNonP=328 / 328A
+menu.variant.modelNonP.bootloader.cksel_bits=0111
+menu.variant.modelNonP.bootloader.cfd_bit=1
+menu.variant.modelNonP.build.variant=standard
+menu.variant.modelNonP.build.mcu=atmega328
+menu.variant.modelPB=328PB
+menu.variant.modelPB.bootloader.cksel_bits=1111
+menu.variant.modelPB.bootloader.cfd_bit=0
+menu.variant.modelPB.build.variant=pb-variant
+menu.variant.modelPB.build.mcu=atmega328pb
+menu.BOD.2v7=BOD 2.7V
+menu.BOD.2v7.bootloader.extended_fuses=0b1111{bootloader.cfd_bit}101
+menu.BOD.4v3=BOD 4.3V
+menu.BOD.4v3.bootloader.extended_fuses=0b1111{bootloader.cfd_bit}100
+menu.BOD.1v8=BOD 1.8V
+menu.BOD.1v8.bootloader.extended_fuses=0b1111{bootloader.cfd_bit}110
+menu.BOD.disabled=BOD  disabled
+menu.BOD.disabled.bootloader.extended_fuses=0b1111{bootloader.cfd_bit}111
+menu.LTO.Os=LTO disabled
+menu.LTO.Os.compiler.c.extra_flags=
+menu.LTO.Os.compiler.c.elf.extra_flags=
+menu.LTO.Os.compiler.cpp.extra_flags=
+menu.LTO.Os.ltoarcmd=avr-ar
+menu.LTO.Os_flto=LTO enabled
+menu.LTO.Os_flto.compiler.c.extra_flags=-Wextra -flto -g
+menu.LTO.Os_flto.compiler.c.elf.extra_flags=-w -flto -g
+menu.LTO.Os_flto.compiler.cpp.extra_flags=-Wextra -flto -g
+menu.LTO.Os_flto.ltoarcmd=avr-gcc-ar
+menu.clock.16MHz_external=External 16 MHz
+menu.clock.16MHz_external.upload.speed=115200
+menu.clock.16MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.16MHz_external.build.clkpr=
+menu.clock.16MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.16MHz_external.build.f_cpu=16000000L
+menu.clock.20MHz_external=External 20 MHz
+menu.clock.20MHz_external.upload.speed=115200
+menu.clock.20MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.20MHz_external.build.clkpr=
+menu.clock.20MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.20MHz_external.build.f_cpu=20000000L
+menu.clock.18_432MHz_external=External 18.432 MHz
+menu.clock.18_432MHz_external.upload.speed=115200
+menu.clock.18_432MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.18_432MHz_external.build.clkpr=
+menu.clock.18_432MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.18_432MHz_external.build.f_cpu=18432000L
+menu.clock.14_7456MHz_external=External 14.7456 MHz
+menu.clock.14_7456MHz_external.upload.speed=115200
+menu.clock.14_7456MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.14_7456MHz_external.build.clkpr=
+menu.clock.14_7456MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.14_7456MHz_external.build.f_cpu=14745600L
+menu.clock.12MHz_external=External 12 MHz
+menu.clock.12MHz_external.upload.speed=57600
+menu.clock.12MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.12MHz_external.build.clkpr=
+menu.clock.12MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.12MHz_external.build.f_cpu=12000000L
+menu.clock.11_0592MHz_external=External 11.0592 MHz
+menu.clock.11_0592MHz_external.upload.speed=115200
+menu.clock.11_0592MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.11_0592MHz_external.build.clkpr=
+menu.clock.11_0592MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.11_0592MHz_external.build.f_cpu=11059200L
+menu.clock.8MHz_external=External 8 MHz
+menu.clock.8MHz_external.upload.speed=57600
+menu.clock.8MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.8MHz_external.build.clkpr=
+menu.clock.8MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.8MHz_external.build.f_cpu=8000000L
+menu.clock.7_3728MHz_external=External 7.3728 MHz
+menu.clock.7_3728MHz_external.upload.speed=115200
+menu.clock.7_3728MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.7_3728MHz_external.build.clkpr=
+menu.clock.7_3728MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.7_3728MHz_external.build.f_cpu=7372800L
+menu.clock.4MHz_external=External 4 MHz
+menu.clock.4MHz_external.upload.speed=9600
+menu.clock.4MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.4MHz_external.build.clkpr=
+menu.clock.4MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.4MHz_external.build.f_cpu=4000000L
+menu.clock.3_6864MHz_external=External 3.6864 MHz
+menu.clock.3_6864MHz_external.upload.speed=115200
+menu.clock.3_6864MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.3_6864MHz_external.build.clkpr=
+menu.clock.3_6864MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.3_6864MHz_external.build.f_cpu=3686400L
+menu.clock.2MHz_external=External 2 MHz
+menu.clock.2MHz_external.upload.speed=9600
+menu.clock.2MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.2MHz_external.build.clkpr=
+menu.clock.2MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.2MHz_external.build.f_cpu=2000000L
+menu.clock.1_8432MHz_external=External 1.8432 MHz
+menu.clock.1_8432MHz_external.upload.speed=115200
+menu.clock.1_8432MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.1_8432MHz_external.build.clkpr=
+menu.clock.1_8432MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.1_8432MHz_external.build.f_cpu=1843200L
+menu.clock.1MHz_external=External 1 MHz
+menu.clock.1MHz_external.upload.speed=9600
+menu.clock.1MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.1MHz_external.build.clkpr=
+menu.clock.1MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.1MHz_external.build.f_cpu=1000000L
+menu.clock.8MHz_internal=Internal 8 MHz
+menu.clock.8MHz_internal.upload.speed=38400
+menu.clock.8MHz_internal.bootloader.low_fuses=0xe2
+menu.clock.8MHz_internal.build.clkpr=
+menu.clock.8MHz_internal.build.clock_speed={build.f_cpu}
+menu.clock.8MHz_internal.build.f_cpu=8000000L
+menu.clock.4MHz_internal=Internal 4 MHz
+menu.clock.4MHz_internal.upload.speed=9600
+menu.clock.4MHz_internal.bootloader.low_fuses=0xe2
+menu.clock.4MHz_internal.build.clkpr=-DOSC_PRESCALER=0x01
+menu.clock.4MHz_internal.build.clock_speed=8000000L
+menu.clock.4MHz_internal.build.f_cpu=4000000L
+menu.clock.2MHz_internal=Internal 2 MHz
+menu.clock.2MHz_internal.upload.speed=9600
+menu.clock.2MHz_internal.bootloader.low_fuses=0xe2
+menu.clock.2MHz_internal.build.clkpr=-DOSC_PRESCALER=0x02
+menu.clock.2MHz_internal.build.clock_speed=8000000L
+menu.clock.2MHz_internal.build.f_cpu=2000000L
+menu.clock.1MHz_internal=Internal 1 MHz
+menu.clock.1MHz_internal.upload.speed=9600
+menu.clock.1MHz_internal.bootloader.low_fuses=0x62
+menu.clock.1MHz_internal.build.clkpr=
+menu.clock.1MHz_internal.build.clock_speed={build.f_cpu}
+menu.clock.1MHz_internal.build.f_cpu=1000000L
+runtime.ide.path=c:\arduino-1.8.19-windows\arduino-1.8.19
+runtime.os=windows
+build.system.path=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1\system
+runtime.ide.version=108019
+target_package=MiniCore
+target_platform=avr
+runtime.hardware.path=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr
+originalid=328
+intellisense.tools.path={runtime.tools.avr-gcc.path}\
+intellisense.include.paths={intellisense.tools.path}\lib\gcc\avr\7.3.0\include;{intellisense.tools.path}avr\include;{intellisense.tools.path}\lib\gcc\avr\7.3.0\include;{intellisense.tools.path}avr\include-fixed;{intellisense.tools.path}avr\include\avr;{intellisense.tools.path}lib\gcc\avr\4.8.1\include;{intellisense.tools.path}lib\gcc\avr\4.9.2\include;{intellisense.tools.path}lib\gcc\avr\4.9.3\include;{vm.intellisense.add-paths}
+tools.atprogram.cmd.path=%AVRSTUDIO_EXE_PATH%\atbackend\atprogram
+tools.atprogram.cmd.setwinpath=true
+tools.atprogram.program.params.verbose=-v
+tools.atprogram.program.params.quiet=-q
+tools.atprogram.program.pattern="{cmd.path}" -d {build.mcu} {program.verbose} {program.extra_params} program -c -f "{build.path}\{build.project_name}.hex"
+tools.atprogram.program.xpattern="{cmd.path}" {AVRSTUDIO_BACKEND_CONNECTION} -d {build.mcu} {program.verbose} {program.extra_params} program -c -f "{build.path}\{build.project_name}.hex"
+tools.atprogram.erase.params.verbose=-v
+tools.atprogram.erase.params.quiet=-q
+tools.atprogram.bootloader.params.verbose=-v
+tools.atprogram.bootloader.params.quiet=-q
+tools.atprogram.bootloader.pattern="{cmd.path}" -d {build.mcu} {bootloader.verbose}  program -c -f "{runtime.ide.path}\hardware\arduino\avr\bootloaders\{bootloader.file}"
+ide.compiler_flags_no_opt=-Og
+tools.gdbstub.cmd=avr-gdb.exe
+tools.gdbstub.path={runtime.tools.avr-gcc.path}/bin
+tools.gdbstub.alternative.path=Micro Platforms/visualmicro/tools/avr-gdb/7.3.0-atmel3.6.1-arduino5
+tools.gdbstub.debug.args="{{{build.path}/{build.project_name}.elf}}" -ex "target remote \\.\{serial.debug.port}"
+tools.gdbstub.showLocalSerialPort=true
+debug_menu.hwdebugger.gdbstub=GDB Stub
+debug_menu.hwdebugger.gdbstub.debug.tool=gdbstub
+meta_gdbstub.sentence=This debugger requires the avr-debugger library (by Jan Dolinay) be included in the project (install via Library Manager or from GitHub).
+meta_gdbstub.comment=To use this debugger, install 'avr-debugger' library, add 1) '#include &lt;avr8-stub.h&gt;'  2) add 'debug_init();' to the 'setup()', and add 'breakpoint();' to the top of 'loop()'. Set vMicro &gt; Debugger &gt; 'Compiler Optimization' to 'No Project', 'No Project + Libraries' or 'None' when debugging (NOTE: This might cause compilation errors with certain code such as HardwareSerial.)
+meta_gdbstub.image.connect=https://www.visualmicro.com/pics/Debug-Help-Uno_USBOnly.png
+meta_gdbstub.image.operation=https://www.visualmicro.com/pics/Debug-Break-Uno-GDBStub-VSOnly.png
+meta_gdbstub.reference.usage.url=https://www.visualmicro.com/page/User-Guide.aspx?doc=Arduino-gdb-Tutorial.html
+version=2.2.0
+compiler.warning_flags=-w
+compiler.warning_flags.none=-w
+compiler.warning_flags.default=
+compiler.warning_flags.more=-Wall
+compiler.warning_flags.all=-Wall -Wextra
+compiler.path={runtime.tools.avr-gcc.path}/bin/
+compiler.c.cmd=avr-gcc
+compiler.c.flags=-c -g -Os {compiler.warning_flags} -std=gnu11 -ffunction-sections -fdata-sections -MMD
+compiler.c.elf.flags={compiler.warning_flags} -Os -Wl,--gc-sections
+compiler.c.elf.cmd=avr-gcc
+compiler.S.flags=-c -g -x assembler-with-cpp
+compiler.cpp.cmd=avr-g++
+compiler.cpp.flags=-c -g -Os {compiler.warning_flags} -std=gnu++17 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD
+compiler.ar.cmd={ltoarcmd}
+compiler.ar.flags=rcs
+compiler.objcopy.cmd=avr-objcopy
+compiler.objcopy.eep.flags=-O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0
+compiler.objdump.cmd=avr-objdump
+compiler.objdump.flags=--disassemble --source --line-numbers --demangle --section=.text
+compiler.elf2hex.flags=-O ihex -R .eeprom
+compiler.elf2hex.bin.flags=-O binary -R .eeprom
+compiler.elf2hex.cmd=avr-objcopy
+compiler.ldflags=
+compiler.size.cmd=avr-size
+compiler.c.extra_flags=
+compiler.c.elf.extra_flags=
+compiler.S.extra_flags=
+compiler.cpp.extra_flags=
+compiler.ar.extra_flags=
+compiler.objcopy.eep.extra_flags=
+compiler.elf2hex.extra_flags=
+recipe.c.o.pattern="{compiler.path}{compiler.c.cmd}" {compiler.c.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.c.extra_flags} {build.extra_flags} {includes} "{source_file}" -o "{object_file}"
+recipe.cpp.o.pattern="{compiler.path}{compiler.cpp.cmd}" {compiler.cpp.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} "{source_file}" -o "{object_file}"
+recipe.S.o.pattern="{compiler.path}{compiler.c.cmd}" {compiler.S.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.S.extra_flags} {build.extra_flags} {includes} "{source_file}" -o "{object_file}"
+archive_file_path={build.path}/{archive_file}
+recipe.ar.pattern="{compiler.path}{compiler.ar.cmd}" {compiler.ar.flags} {compiler.ar.extra_flags} "{archive_file_path}" "{object_file}"
+recipe.c.combine.pattern="{compiler.path}{compiler.c.elf.cmd}" {compiler.c.elf.flags} -mmcu={build.mcu} {compiler.c.elf.extra_flags} -o "{build.path}/{build.project_name}.elf" {object_files} "{build.path}/{archive_file}" "-L{build.path}" -lm
+recipe.objcopy.eep.pattern="{compiler.path}{compiler.objcopy.cmd}" {compiler.objcopy.eep.flags} {compiler.objcopy.eep.extra_flags} "{build.path}/{build.project_name}.elf" "{build.path}/{build.project_name}.eep"
+recipe.objcopy.hex.pattern="{compiler.path}{compiler.elf2hex.cmd}" {compiler.elf2hex.flags} {compiler.elf2hex.extra_flags} "{build.path}/{build.project_name}.elf" "{build.path}/{build.project_name}.hex"
+recipe.hooks.objcopy.postobjcopy.1.pattern.windows=cmd /C echo. &amp;&amp; "{compiler.path}{compiler.objdump.cmd}" {compiler.objdump.flags} "{build.path}/{build.project_name}.elf" &gt; "{build.path}/{build.project_name}_{build.mcu}_{build.f_cpu}.lst"
+recipe.hooks.objcopy.postobjcopy.1.pattern.linux=chmod +x "{runtime.platform.path}/scripts/create_disassembler_listing.sh"
+recipe.hooks.objcopy.postobjcopy.1.pattern.macosx=chmod +x "{runtime.platform.path}/scripts/create_disassembler_listing.sh"
+recipe.hooks.objcopy.postobjcopy.2.pattern.linux="{runtime.platform.path}/scripts/create_disassembler_listing.sh" "{compiler.path}{compiler.objdump.cmd}" "{compiler.objdump.flags}" "{build.path}/{build.project_name}.elf" "{build.path}/{build.project_name}_{build.mcu}_{build.f_cpu}.lst"
+recipe.hooks.objcopy.postobjcopy.2.pattern.macosx="{runtime.platform.path}/scripts/create_disassembler_listing.sh" "{compiler.path}{compiler.objdump.cmd}" "{compiler.objdump.flags}" "{build.path}/{build.project_name}.elf" "{build.path}/{build.project_name}_{build.mcu}_{build.f_cpu}.lst"
+recipe.output.tmp_file={build.project_name}.hex
+recipe.output.save_file={build.project_name}_{build.mcu}_{build.f_cpu}.hex
+recipe.hooks.savehex.presavehex.1.pattern.windows="{runtime.platform.path}/scripts/delete_merged_output.bat" {build.export_merged_output} "{build.path}\{build.project_name}.with_bootloader.hex"
+recipe.hooks.savehex.presavehex.2.pattern.windows=cmd /C copy "{build.path}\{build.project_name}_{build.mcu}_{build.f_cpu}.lst" "{sketch_path}"
+recipe.hooks.savehex.presavehex.1.pattern.linux=chmod +x "{runtime.platform.path}/scripts/delete_merged_output.sh"
+recipe.hooks.savehex.presavehex.2.pattern.linux="{runtime.platform.path}/scripts/delete_merged_output.sh" {build.export_merged_output} "{build.path}/{build.project_name}.with_bootloader.hex"
+recipe.hooks.savehex.presavehex.3.pattern.linux=cp "{build.path}/{build.project_name}_{build.mcu}_{build.f_cpu}.lst" "{sketch_path}"
+recipe.hooks.savehex.presavehex.1.pattern.macosx=chmod +x "{runtime.platform.path}/scripts/delete_merged_output.sh"
+recipe.hooks.savehex.presavehex.2.pattern.macosx="{runtime.platform.path}/scripts/delete_merged_output.sh" {build.export_merged_output} "{build.path}/{build.project_name}.with_bootloader.hex"
+recipe.hooks.savehex.presavehex.3.pattern.macosx=cp "{build.path}/{build.project_name}_{build.mcu}_{build.f_cpu}.lst" "{sketch_path}"
+recipe.size.pattern="{compiler.path}{compiler.size.cmd}" -A "{build.path}/{build.project_name}.elf"
+recipe.size.regex=^(?:\.text|\.data|\.bootloader)\s+([0-9]+).*
+recipe.size.regex.data=^(?:\.data|\.bss|\.noinit)\s+([0-9]+).*
+recipe.size.regex.eeprom=^(?:\.eeprom)\s+([0-9]+).*
+preproc.includes.flags=-w -x c++ -M -MG -MP
+recipe.preproc.includes="{compiler.path}{compiler.cpp.cmd}" {compiler.cpp.flags} {preproc.includes.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} "{source_file}"
+preproc.macros.flags=-w -x c++ -E -CC
+recipe.preproc.macros="{compiler.path}{compiler.cpp.cmd}" {compiler.cpp.flags} {preproc.macros.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} "{source_file}" -o "{preprocessed_file_path}"
+tools.avrdude.path={runtime.tools.avrdude.path}
+tools.avrdude.cmd.path={path}/bin/avrdude
+tools.avrdude.config.path={runtime.platform.path}/avrdude.conf
+tools.avrdude.upload.params.verbose=-v
+tools.avrdude.upload.params.quiet=-q -q
+tools.avrdude.upload.verify=
+tools.avrdude.upload.params.noverify=-V
+tools.avrdude.upload.pattern="{cmd.path}" "-C{config.path}" {upload.verbose} {upload.verify} -p{build.mcu} -c{upload.protocol} -P{serial.port} -b{upload.speed} -D "-Uflash:w:{build.path}/{build.project_name}.hex:i"
+tools.avrdude.program.params.verbose=-v
+tools.avrdude.program.params.quiet=-q -q
+tools.avrdude.program.params.noverify=-V
+tools.avrdude.program.pattern="{cmd.path}" "-C{config.path}" {program.verbose} {program.verify} -p{build.mcu} -c{protocol} {program.extra_params} "-Uflash:w:{build.path}/{build.project_name}.with_bootloader.hex:i"
+tools.avrdude.erase.params.verbose=-v
+tools.avrdude.erase.params.quiet=-q -q
+tools.avrdude.erase.pattern="{cmd.path}" "-C{config.path}" -v -p{build.mcu} -c{protocol} {program.extra_params} -e -Ulock:w:{bootloader.unlock_bits}:m -Uefuse:w:{bootloader.extended_fuses}:m -Uhfuse:w:{bootloader.high_fuses}:m -Ulfuse:w:{bootloader.low_fuses}:m
+tools.avrdude.bootloader.params.verbose=-v
+tools.avrdude.bootloader.params.quiet=-q -q
+tools.avrdude.bootloader.pattern="{cmd.path}" "-C{config.path}" -v -p{build.mcu} -c{protocol} {program.extra_params} "-Uflash:w:{runtime.platform.path}/bootloaders/{bootloader.file}:i" -Ulock:w:{bootloader.lock_bits}:m
+tools.avrdude_remote.upload.pattern=/usr/bin/run-avrdude /tmp/sketch.hex {upload.verbose} -p{build.mcu}
+build.usb_manufacturer="Unknown"
+build.usb_flags=-DUSB_VID={build.vid} -DUSB_PID={build.pid} '-DUSB_MANUFACTURER={build.usb_manufacturer}' '-DUSB_PRODUCT={build.usb_product}'
+recipe.hooks.objcopy.postobjcopy.1.pattern=cmd /C echo. &amp;&amp; "{compiler.path}{compiler.objdump.cmd}" {compiler.objdump.flags} "{build.path}/{build.project_name}.elf" &gt; "{build.path}/{build.project_name}_{build.mcu}_{build.f_cpu}.lst"
+recipe.hooks.savehex.presavehex.1.pattern="{runtime.platform.path}/scripts/delete_merged_output.bat" {build.export_merged_output} "{build.path}\{build.project_name}.with_bootloader.hex"
+recipe.hooks.savehex.presavehex.2.pattern=cmd /C copy "{build.path}\{build.project_name}_{build.mcu}_{build.f_cpu}.lst" "{sketch_path}"
+upload.verify=
+tools.vmopenocd.cmd=bin/openocd.exe
+tools.vmopenocd.cmd.windows=bin/openocd.exe
+tools.vmopenocd.debug.params.verbose=-d2
+tools.vmopenocd.debug.params.quiet=-d0
+tools.vmopenocd.debug.address=localhost:3333
+tools.vmopenocd.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.vmopenocd.scriptPath=-s "{path}/scripts/"
+tools.vmopenocd.logging=-l "{{build.path}/{build.project_name}_DebugOpenOCD.log}"
+tools.vmopenocd.boardCmd=
+tools.vmopenocd.targetCmd=
+tools.vmopenocd.initCmd=
+tools.vmopenocd.debug.pattern="{path}/{cmd}" {debug.verbose} {logging} {scriptPath} {boardCmd} {targetCmd} {initCmd}
+tools.vmopenocd.program.cmd=bin/openocd.exe
+tools.vmopenocd.program.cmd.windows=bin/openocd.exe
+tools.vmopenocd.program.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.vmopenocd.program.address=localhost:3333
+tools.vmopenocd.program.params.verbose=-d2
+tools.vmopenocd.program.params.quiet=-d0
+tools.vmopenocd.program.elf.message=****[vMicro]**** Uploading ELF :
+tools.vmopenocd.program.pattern="{path}/{cmd}" {program.verbose} {scriptPath} {boardCmd} {targetCmd} -c "echo -n {{program.elf.message}}" {programCmd}
+tools.atmelICE.protocol=
+tools.atmelICE.debug.cmd=arm-none-eabi-gdb.exe
+tools.atmelICE.debug.path={runtime.tools.arm-none-eabi-gcc.path}/bin
+tools.atmelICE.debug.pattern="{path}/{cmd}"
+tools.atmelICE.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.atmelICE.server.initCmd=-c "init"
+tools.atmelICE.server.boardCmd=-c "adapter driver cmsis-dap" -c "cmsis_dap_vid_pid 0x03eb 0x2141"
+tools.atmelICE.server.tool=vmopenocd
+tools.atmelICE.debug.server=vmopenocd
+tools.atmelICE.program.scriptPath=-s "{program.path}/scripts/"
+tools.atmelICE.program.boardCmd=-c "adapter driver cmsis-dap" -c "cmsis_dap_vid_pid 0x03eb 0x2141"
+tools.atmelICE.program.cmd=bin/openocd.exe
+tools.atmelICE.program.cmd.windows=bin/openocd.exe
+tools.atmelICE.program.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.atmelICE.program.address=localhost:3333
+tools.atmelICE.program.params.verbose=-d2
+tools.atmelICE.program.params.quiet=-d0
+tools.atmelICE.program.elf.message=****[vMicro]**** Uploading ELF :
+tools.atmelICE.program.pattern="{program.path}/{program.cmd}" {program.verbose} {program.scriptPath} {program.boardCmd} {program.targetCmd} -c "echo -n {{program.elf.message}}" {program.programCmd}
+tools.atmelICE.program.extra_params=
+tools.atmelICE.program.protocol=
+tools.atmelICE.erase.params.verbose=-d3
+tools.atmelICE.erase.params.quiet=-d0
+tools.atmelICE.erase.pattern=
+tools.jlink.cmd=arm-none-eabi-gdb.exe
+tools.jlink.path={runtime.tools.arm-none-eabi-gcc.path}/bin
+tools.jlink.pattern="{path}/{cmd}"
+tools.jlink.server.tool=vmopenocd
+tools.jlink.debug.server=vmopenocd
+tools.jlink.server.boardCmd=-f "interface/jlink.cfg"
+tools.jlink.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.jlink.server.initCmd=-c "init"
+tools.jlink.program.scriptPath=-s "{program.path}/scripts/"
+tools.jlink.program.boardCmd=-f "interface/jlink.cfg"
+tools.jlink.program.cmd=bin/openocd.exe
+tools.jlink.program.cmd.windows=bin/openocd.exe
+tools.jlink.program.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.jlink.program.address=localhost:3333
+tools.jlink.program.params.verbose=-d2
+tools.jlink.program.params.quiet=-d0
+tools.jlink.program.elf.message=****[vMicro]**** Uploading ELF :
+tools.jlink.program.pattern="{program.path}/{program.cmd}" {program.verbose} {program.scriptPath} {program.boardCmd} {program.targetCmd} -c "echo -n {{program.elf.message}}" {program.programCmd}
+tools.jlink.upload.scriptPath=-s "{upload.path}/scripts/"
+tools.jlink.upload.boardCmd=-f "interface/jlink.cfg"
+tools.jlink.upload.cmd=bin/openocd.exe
+tools.jlink.upload.cmd.windows=bin/openocd.exe
+tools.jlink.upload.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.jlink.upload.address=localhost:3333
+tools.jlink.upload.params.verbose=-d2
+tools.jlink.upload.params.quiet=-d0
+tools.jlink.upload.elf.message=****[vMicro]**** Uploading ELF :
+tools.jlink.upload.pattern="{upload.path}/{upload.cmd}" {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c "echo -n {{upload.elf.message}}" {upload.programCmd}
+tools.bmp_upload.cmd=arm-none-eabi-gdb.exe
+tools.bmp_upload.debug.path={runtime.tools.arm-none-eabi-gcc.path}/bin/
+tools.bmp_upload.program.cmd=bin/arm-none-eabi-gdb.exe
+tools.bmp_upload.program.cmd.windows=bin/arm-none-eabi-gdb.exe
+tools.bmp_upload.program.path={runtime.tools.arm-none-eabi-gcc.path}
+tools.bmp_upload.upload.cmd=bin/arm-none-eabi-gdb.exe
+tools.bmp_upload.upload.cmd.windows=bin/arm-none-eabi-gdb.exe
+tools.bmp_upload.upload.path={runtime.tools.arm-none-eabi-gcc.path}
+tools.bmp_upload.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.bmp_upload.server.initCmd=-c "init"
+tools.bmp_upload.showLocalSerialPort=true
+tools.bmp_upload.debug.server=
+tools.stlinkv2.description=
+tools.stlinkv2.cmd=arm-none-eabi-gdb.exe
+tools.stlinkv2.path={runtime.tools.arm-none-eabi-gcc.path}/bin
+tools.stlinkv2.pattern="{path}/{cmd}"
+tools.stlinkv2.server.tool=vmopenocd
+tools.stlinkv2.debug.server=vmopenocd
+tools.stlinkv2.server.boardCmd=-f "interface/stlink.cfg"
+tools.stlinkv2.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.stlinkv2.server.initCmd=-c "init"
+tools.stlinkv2.upload.scriptPath=-s "{upload.path}/scripts/"
+tools.stlinkv2.upload.boardCmd=-f "interface/stlink.cfg"
+tools.stlinkv2.upload.cmd=bin/openocd.exe
+tools.stlinkv2.upload.cmd.windows=bin/openocd.exe
+tools.stlinkv2.upload.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.stlinkv2.upload.address=localhost:3333
+tools.stlinkv2.upload.params.verbose=-d2
+tools.stlinkv2.upload.params.quiet=-d0
+tools.stlinkv2.upload.elf.message=****[vMicro]**** Uploading ELF :
+tools.stlinkv2.upload.pattern="{upload.path}/{upload.cmd}" {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c "echo -n {{upload.elf.message}}" {upload.programCmd}
+tools.stlinkv2.upload.extra_params=
+tools.stlinkv2.upload.protocol=
+tools.stlinkv2.protocol=
+tools.f2232mm.cmd=arm-none-eabi-gdb.exe
+tools.f2232mm.path={runtime.tools.arm-none-eabi-gcc.path}/bin
+tools.f2232mm.pattern="{path}/{cmd}" {args}
+tools.f2232mm.server.tool=vmopenocd
+tools.f2232mm.debug.server=vmopenocd
+tools.f2232mm.server.boardCmd=-f "interface/ftdi/minimodule.cfg"
+tools.f2232mm.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.f2232mm.server.initCmd=-c "init"
+tools.f2232mm.upload.scriptPath=-s "{upload.path}/scripts/"
+tools.f2232mm.upload.boardCmd=-f "interface/ftdi/minimodule.cfg"
+tools.f2232mm.upload.cmd=bin/openocd.exe
+tools.f2232mm.upload.cmd.windows=bin/openocd.exe
+tools.f2232mm.upload.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.f2232mm.upload.address=localhost:3333
+tools.f2232mm.upload.params.verbose=-d2
+tools.f2232mm.upload.params.quiet=-d0
+tools.f2232mm.upload.elf.message=****[vMicro]**** Uploading ELF :
+tools.f2232mm.upload.pattern="{upload.path}/{upload.cmd}" {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c "echo -n {{upload.elf.message}}" {upload.programCmd}
+tools.f2232mm.upload.extra_params=
+tools.f2232mm.upload.protocol=
+tools.f2232mm.protocol=
+tools.f2232h.server.boardCmd=-f "interface/ftdi/minimodule-lowcost.cfg"
+tools.f2232h.cmd=arm-none-eabi-gdb.exe
+tools.f2232h.path={runtime.tools.arm-none-eabi-gcc.path}/bin
+tools.f2232h.pattern="{path}/{cmd}"
+tools.f2232h.server.tool=vmopenocd
+tools.f2232h.debug.server=vmopenocd
+tools.f2232h.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.f2232h.server.initCmd=-c "init"
+tools.f2232h.upload.scriptPath=-s "{upload.path}/scripts/"
+tools.f2232h.upload.boardCmd=-f "interface/ftdi/minimodule-lowcost.cfg"
+tools.f2232h.upload.cmd=bin/openocd.exe
+tools.f2232h.upload.cmd.windows=bin/openocd.exe
+tools.f2232h.upload.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.f2232h.upload.address=localhost:3333
+tools.f2232h.upload.params.verbose=-d2
+tools.f2232h.upload.params.quiet=-d0
+tools.f2232h.upload.elf.message=****[vMicro]**** Uploading ELF :
+tools.f2232h.upload.pattern="{upload.path}/{upload.cmd}" {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c "echo -n {{upload.elf.message}}" {upload.programCmd}
+tools.f2232h.upload.extra_params=
+tools.f2232h.upload.protocol=
+tools.f2232h.protocol=
+vm.platform.root.path=C:\Program Files (x86)\Atmel\Studio\7.0\Extensions\ejiwfyoc.ucr\Micro Platforms\arduino16x
+usbasp.name=USBasp
+usbasp.communication=usb
+usbasp.protocol=usbasp
+usbasp.program.protocol=usbasp
+usbasp.program.tool=avrdude
+usbasp.program.extra_params=
+usbasp_slow.name=USBasp slow
+usbasp_slow.communication=usb
+usbasp_slow.protocol=usbasp
+usbasp_slow.program.protocol=usbasp
+usbasp_slow.program.tool=avrdude
+usbasp_slow.program.extra_params=-B32
+usbtinyisp.name=USBtinyISP
+usbtinyisp.protocol=usbtiny
+usbtinyisp.program.tool=avrdude
+usbtinyisp.program.extra_params=
+usbtinyisp_slow.name=USBtinyISP slow
+usbtinyisp_slow.protocol=usbtiny
+usbtinyisp_slow.program.tool=avrdude
+usbtinyisp_slow.program.extra_params=-B32
+arduinoasisp.name=Arduino as ISP
+arduinoasisp.communication=serial
+arduinoasisp.protocol=stk500v1
+arduinoasisp.speed=19200
+arduinoasisp.program.protocol=stk500v1
+arduinoasisp.program.speed=19200
+arduinoasisp.program.tool=avrdude
+arduinoasisp.program.extra_params=-P{serial.port} -b{program.speed}
+xplainedmini.name=Xplained Mini
+xplainedmini.communication=usb
+xplainedmini.protocol=xplainedmini
+xplainedmini.program.protocol=xplainedmini
+xplainedmini.program.tool=avrdude
+xplainedmini.program.extra_params=
+atmel_ice.name=Atmel-ICE ISP
+atmel_ice.communication=usb
+atmel_ice.protocol=atmelice_isp
+atmel_ice.program.protocol=atmelice_isp
+atmel_ice.program.tool=avrdude
+atmel_ice.program.extra_params=
+pickit4_isp.name=PICkit4 ISP
+pickit4_isp.communication=usb
+pickit4_isp.protocol=pickit4_isp
+pickit4_isp.program.protocol=pickit4_isp
+pickit4_isp.program.tool=avrdude
+pickit4_isp.program.extra_params=
+snap_isp.name=MPLAB SNAP ISP
+snap_isp.communication=usb
+snap_isp.protocol=snap_isp
+snap_isp.program.protocol=snap_isp
+snap_isp.program.tool=avrdude
+snap_isp.program.extra_params=
+avrispmkii.name=AVRISP mkII
+avrispmkii.communication=usb
+avrispmkii.protocol=stk500v2
+avrispmkii.program.protocol=stk500v2
+avrispmkii.program.tool=avrdude
+avrispmkii.program.extra_params=
+stk500.name=STK500 as ISP (MiniCore)
+stk500.communication=serial
+stk500.protocol=stk500
+stk500.program.protocol=stk500
+stk500.program.tool=avrdude
+stk500.program.extra_params=-P {serial.port}
+compiler.libraries.ldflags=
+pluggable_discovery.required.0=builtin:serial-discovery
+pluggable_discovery.required.1=builtin:mdns-discovery
+pluggable_monitor.required.serial=builtin:serial-monitor
+tools.avrdude.program.verify=
+tools.avrdude.network_cmd={runtime.tools.arduinoOTA.path}/bin/arduinoOTA
+tools.avrdude.upload.network_pattern="{network_cmd}" -address {serial.port} -port {upload.network.port} -sketch "{build.path}/{build.project_name}.hex" -upload {upload.network.endpoint_upload} -sync {upload.network.endpoint_sync} -reset {upload.network.endpoint_reset} -sync_exp {upload.network.sync_return}
+tools.arduino_ota.cmd={runtime.tools.arduinoOTA.path}/bin/arduinoOTA
+tools.arduino_ota.upload.pattern="{cmd}" -address {upload.port.address} -port {upload.port.properties.port} -sketch "{build.path}/{build.project_name}.hex" -upload {upload.port.properties.endpoint_upload} -sync {upload.port.properties.endpoint_sync} -reset {upload.port.properties.endpoint_reset} -sync_exp {upload.port.properties.sync_return}
+avrisp.name=AVR ISP
+avrisp.communication=serial
+avrisp.protocol=stk500v1
+avrisp.program.protocol=stk500v1
+avrisp.program.tool=avrdude
+avrisp.program.tool.default=avrdude
+avrisp.program.extra_params=-P{serial.port}
+avrispmkii.program.tool.default=avrdude
+usbtinyisp.program.tool.default=avrdude
+arduinoisp.name=ArduinoISP
+arduinoisp.protocol=arduinoisp
+arduinoisp.program.tool=avrdude
+arduinoisp.program.tool.default=avrdude
+arduinoisp.program.extra_params=
+arduinoisporg.name=ArduinoISP.org
+arduinoisporg.protocol=arduinoisporg
+arduinoisporg.program.tool=avrdude
+arduinoisporg.program.tool.default=avrdude
+arduinoisporg.program.extra_params=
+usbasp.program.tool.default=avrdude
+parallel.name=Parallel Programmer
+parallel.protocol=dapa
+parallel.force=true
+parallel.program.tool=avrdude
+parallel.program.tool.default=avrdude
+parallel.program.extra_params=-F
+arduinoasisp.program.tool.default=avrdude
+arduinoasispatmega32u4.name=Arduino as ISP (ATmega32U4)
+arduinoasispatmega32u4.communication=serial
+arduinoasispatmega32u4.protocol=arduino
+arduinoasispatmega32u4.speed=19200
+arduinoasispatmega32u4.program.protocol=arduino
+arduinoasispatmega32u4.program.speed=19200
+arduinoasispatmega32u4.program.tool=avrdude
+arduinoasispatmega32u4.program.tool.default=avrdude
+arduinoasispatmega32u4.program.extra_params=-P{serial.port} -b{program.speed}
+usbGemma.name=Arduino Gemma
+usbGemma.protocol=arduinogemma
+usbGemma.program.tool=avrdude
+usbGemma.program.tool.default=avrdude
+usbGemma.program.extra_params=
+usbGemma.config.path={runtime.platform.path}/bootloaders/gemma/avrdude.conf
+buspirate.name=BusPirate as ISP
+buspirate.communication=serial
+buspirate.protocol=buspirate
+buspirate.program.protocol=buspirate
+buspirate.program.tool=avrdude
+buspirate.program.tool.default=avrdude
+buspirate.program.extra_params=-P{serial.port}
+stk500.program.tool.default=avrdude
+jtag3isp.name=Atmel JTAGICE3 (ISP mode)
+jtag3isp.communication=usb
+jtag3isp.protocol=jtag3isp
+jtag3isp.program.protocol=jtag3isp
+jtag3isp.program.tool=avrdude
+jtag3isp.program.tool.default=avrdude
+jtag3isp.program.extra_params=
+jtag3.name=Atmel JTAGICE3 (JTAG mode)
+jtag3.communication=usb
+jtag3.protocol=jtag3
+jtag3.program.protocol=jtag3
+jtag3.program.tool=avrdude
+jtag3.program.tool.default=avrdude
+jtag3.program.extra_params=-B0.1
+atmel_ice.program.tool.default=avrdude
+medbg.name=Atmel mEDBG
+medbg.communication=usb
+medbg.protocol=stk500v2
+medbg.program.protocol=stk500v2
+medbg.program.tool=avrdude
+medbg.program.extra_params=-Pusb
+runtime.tools.avr-gcc.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7
+runtime.tools.avr-gcc-7.3.0-atmel3.6.1-arduino7.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7
+runtime.tools.avrdude.path=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\tools\avrdude\7.1-arduino.1
+runtime.tools.avrdude-7.1-arduino.1.path=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\tools\avrdude\7.1-arduino.1
+runtime.tools.arduinoOTA.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\arduinoOTA\1.3.0
+runtime.tools.arduinoOTA-1.3.0.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\arduinoOTA\1.3.0
+runtime.tools.avrdude-6.3.0-arduino17.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\avrdude\6.3.0-arduino17
+runtime.tools.ctags.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\ctags\5.8-arduino11
+runtime.tools.ctags-5.8-arduino11.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\ctags\5.8-arduino11
+runtime.tools.mdns-discovery.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\mdns-discovery\1.0.6
+runtime.tools.mdns-discovery-1.0.6.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\mdns-discovery\1.0.6
+runtime.tools.serial-discovery.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\serial-discovery\1.3.3
+runtime.tools.serial-discovery-1.3.3.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\serial-discovery\1.3.3
+runtime.tools.serial-monitor.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\serial-monitor\0.12.0
+runtime.tools.serial-monitor-0.12.0.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\serial-monitor\0.12.0
+runtime.vm.boardinfo.id=MiniCore_328
+runtime.vm.boardinfo.name=MiniCore_328
+runtime.vm.boardinfo.desc=ATmega328
+runtime.vm.boardinfo.src_location=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1
+ide.hint=Use installed IDE (hardware, reference/help + libraries)
+ide.location.key=Arduino16x
+ide.location.ide.winreg=Arduino 1.6.x Application
+ide.location.sketchbook.winreg=Arduino 1.6.x Sketchbook
+ide.location.sketchbook.preferences=sketchbook.path
+ide.default.revision_name=1.8.13
+ide.default.version=10800
+ide.default.package=arduino
+ide.default.platform=avr
+ide.multiplatform=true
+ide.includes=Arduino.h
+ide.exe_name=arduino
+ide.recipe.preproc.defines.flags=-w -x c++ -E -dM
+ide.platformswithoutpackage=false
+ide.includes.fallback=wprogram.h
+ide.extension=ino
+ide.extension.fallback=pde
+ide.versionGTEQ=160
+ide.exe=arduino.exe
+ide.builder.exe=arduinobuilder.exe
+ide.builder.name=Arduino Builder
+ide.hosts=atmel
+ide.url=https://www.visualmicro.com/page/Download-Arduino-Or-Other-Supporting-IDEs.aspx
+ide.help.reference.path=reference
+ide.help.reference.path2=reference\www.arduino.cc\en\Reference
+ide.help.reference.serial=reference\www.arduino.cc\en\Serial
+ide.location.preferences.portable={runtime.ide.path}\portable
+ide.location.preferences.arduinoData={runtime.sketchbook.path}\ArduinoData
+ide.location.preferences=%VM_APPDATA_LOCAL%\arduino15\preferences.txt
+ide.location.preferences_fallback=%VM_APPDATA_ROAMING%\arduino15\preferences.txt
+ide.location.contributions=%VM_APPDATA_LOCAL%\arduino15
+ide.location.contributions_fallback=%VM_APPDATA_ROAMING%\arduino15
+ide.contributions.boards.allow=true
+ide.contributions.boards.ignore_unless_rewrite_found=true
+ide.contributions.libraries.allow=true
+ide.contributions.boards.support.urls.wiki=https://github.com/arduino/Arduino/wiki/Unofficial-list-of-3rd-party-boards-support-urls
+ide.create_platforms_from_boardsTXT.teensy=build.core
+vm.debug=true
+software=ARDUINO
+ssh.user.name=root
+ssh.user.default.password=arduino
+ssh.host.wwwfiles.path=/www/sd
+build.working_directory={runtime.ide.path}\java\bin
+runtime.tools.vm_web_debugger.path={vm.platform.root.path}/../../Micro Debuggers/WebDebugger
+recipe.hooks.vmdeploy.vm_web_debugger_postupload.1.pattern="{runtime.tools.vm_web_debugger.path}/DeployMicroWebserver.exe" "{sketch_path}" "{serial.port}" "{runtime.hardware.path}\.."
+recipe.hooks.vmlaunch.vm_web_debugger_preopen.1.pattern=notepad.exe "{sketch_path}\__vm\vmWebDebugger\Start-WebServer.bat"
+recipe.hooks.vmlaunch.vm_web_debugger_preopen.2.pattern={sketch_path}\__vm\vmWebDebugger\Start-WebServer.bat
+ide.debug_menu.debugger_type=Debug
+ide.debug_menu.debugger_type.none=Off
+ide.debug_menu.none.debug.tool=no_debug
+ide.debug_menu.debugger_type.universal=Serial
+ide.debug_menu.universal.debug.tool=universal
+ide.debug_menu.debugger_type.hwdebugger=Hardware
+ide.debug_menu.hwdebugger=Debugger
+ide.debug_menu.hwdebugger.custom_debugger=Manual/Custom
+ide.debug_menu.hwdebugger.custom_debugger.debug.tool=dbg_external
+ide.meta_custom_debugger.sentence=Provides a build that includes debug defines and will launch a custom debugger if one is provided.
+ide.meta_custom_debugger.paragraph=This is option is for advanced use. It is recommended that a pre-configured debugger be selected when available in this list. Usage: Optionally add a customer debugger to the project. A 'debugger_launch.json' file shares the same command syntax that is used by the VsCode debugger. Custom debuggers can be targeted at a board and/or variant and/or configuration name. IE: [variant].[configuration_name][.]debugger_launch.json
+ide.meta_custom_debugger.reference.usage.url=https://github.com/Microsoft/vscode-cpptools/blob/master/launch.md#customlaunchsetupcommands
+ide.meta_custom_debugger.reference.connect.url=https://docs.microsoft.com/en-us/visualstudio/debugger/create-custom-views-of-native-objects?view=vs-2019
+ide.debug_menu.vm_disable_optimization=Disable Optimization
+ide.debug_menu.vm_disable_optimization.vm_disable_opt_default=Default Optimization
+ide.debug_menu.vm_disable_optimization.vm_disable_opt_proj=No Project  Optimization
+ide.debug_menu.vm_disable_opt_proj.vm_disable_opt_project={ide.compiler_flags_no_opt}
+ide.debug_menu.vm_disable_optimization.vm_disable_opt_proj_libs=No Project + Libraries Optimization
+ide.debug_menu.vm_disable_opt_proj_libs.vm_disable_opt_project={ide.compiler_flags_no_opt}
+ide.debug_menu.vm_disable_opt_proj_libs.vm_disable_opt_libraries={ide.compiler_flags_no_opt}
+ide.debug_menu.vm_disable_optimization.vm_disable_opt_all=No Optimization
+ide.meta_vm_disable_opt_all.sentence=Disable compiler optimization for all sources:- Project, Library and Platform.
+ide.meta_vm_disable_opt_all.comment=After switching between 'No Optimization' and other optimization values, please click "Solution Clean" or switch off (or cycle) 'vMicro&gt;Compiler&gt;Shared Cache For Cores'. NOTE: Changing optimization settings can cause build errors or result in overly large programs.
+ide.debug_menu.vm_disable_opt_all.vm_disable_opt_project={ide.compiler_flags_no_opt}
+ide.debug_menu.vm_disable_opt_all.vm_disable_opt_libraries={ide.compiler_flags_no_opt}
+ide.debug_menu.vm_disable_opt_all.vm_disable_opt_core={ide.compiler_flags_no_opt}
+ide.appid=arduino16x
+location.sketchbook=C:\Users\dlcks\Documents\Arduino
+build.core.path=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1\cores\MCUdude_corefiles
+vm.core.include=arduino.h
+vm.boardsource.path=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1
+runtime.platform.path=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1
+vm.platformname.name=avr
+build.arch=AVR
+debug.tool=universal
+upload.speed=115200
+bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+build.clkpr=
+build.clock_speed={build.f_cpu}
+build.f_cpu=16000000L
+bootloader.extended_fuses=0b1111{bootloader.cfd_bit}101
+bootloader.eesave_bit=0
+ltoarcmd=avr-ar
+bootloader.cksel_bits=0111
+bootloader.cfd_bit=1
+build.variant=standard
+build.mcu=atmega328p
+upload.maximum_size=32256
+upload.protocol=arduino
+upload.port=UART0
+build.export_merged_output=true
+bootloader.high_fuses=0b1101{bootloader.eesave_bit}110
+bootloader.file=optiboot_flash/bootloaders/{build.mcu}/{build.clock_speed}/optiboot_flash_{build.mcu}_{upload.port}_{upload.speed}_{build.clock_speed}_{build.bootloader_led}.hex
+build.architecture=7.3.0-atmel3.6.1-arduino7
+vmresolved.compiler.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\bin\
+vmresolved.tools.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7
+</arduino.board.property_bag>
+        <arduino.build.mcu>atmega328p</arduino.build.mcu>
+        <arduino.build.f_cpu>16000000L</arduino.build.f_cpu>
+        <arduino.build.core>MCUdude_corefiles</arduino.build.core>
+        <arduino.upload.protocol>arduino</arduino.upload.protocol>
+        <arduino.upload.speed>115200</arduino.upload.speed>
+        <arduino.upload.maximum_size>32256</arduino.upload.maximum_size>
+        <visualmicro.application.name>arduino16x</visualmicro.application.name>
+        <visualmicro.package.name>MiniCore</visualmicro.package.name>
+        <visualmicro.platform.name>avr</visualmicro.platform.name>
+        <config.Debug.customdebug_pro_16MHzatmega328_debugger_type>universal</config.Debug.customdebug_pro_16MHzatmega328_debugger_type>
+        <config.Debug.customdebug_diecimila_atmega328_debugger_type>universal</config.Debug.customdebug_diecimila_atmega328_debugger_type>
+        <config.Debug.customdebug_MiniCore_328_debugger_type>universal</config.Debug.customdebug_MiniCore_328_debugger_type>
+      </VisualMicroSettings>
+    </VisualMicroSettings>
+    <VMSETTING_IncludePaths>../../../Sketch11;c:/arduino-1.8.19-windows/arduino-1.8.19/hardware/arduino/avr/cores/arduino;c:/arduino-1.8.19-windows/arduino-1.8.19/hardware/arduino/avr/variants/standard;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7//lib/gcc/avr/7.3.0/include;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include-fixed;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.2/include;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.3/include;{vm.intellisense.add-paths};c:/users/dlcks/DOCUME~1/ATMELS~1/7.0/Sketch11/Sketch11;C:/Users/dlcks/DOCUME~1/ATMELS~1/7.0/Sketch11/Sketch11;c:/arduino-1.8.19-windows/arduino-1.8.19/hardware/arduino/avr/variants/eightanaloginputs;c:/arduino-1.8.19-windows/arduino-1.8.19/hardware/arduino/avr/libraries/SoftwareSerial/src;c:/arduino-1.8.19-windows/arduino-1.8.19/hardware/arduino/avr/libraries/EEPROM/src;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.6/libraries/EEPROM/src;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.6/variants/standard;C:/Users/dlcks/Documents/Arduino/libraries/IRremote-4.0.0/src;C:/Users/dlcks/Documents/Arduino/libraries/MQ131_gas_sensor-1.5.2/src;C:/Users/dlcks/Documents/Arduino/libraries/AM1008W_K_I2C-1.0.0/src;C:/Users/dlcks/Documents/Arduino/libraries/TM16xx_LEDs_and_Buttons-0.5.2110/src;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.6/libraries/Wire/src;C:/Users/dlcks/Documents/Arduino/libraries/Adafruit_GFX_Library-1.11.5;C:/Users/dlcks/Documents/Arduino/libraries/Adafruit_BusIO;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.6/libraries/SPI/src;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.6/libraries/Wire/src/utility;C:/Users/dlcks/Desktop/아두이노/7SEGME~1/ver/Ide_test/Sketch11;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles/travis-ci;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/SPI/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src/utility;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/variants/standard;</VMSETTING_IncludePaths>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.Device>-mmcu=atmega328p</avrgcc.common.Device>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__AVR_ATmega328p__</Value>
+      <Value>__AVR_ATmega328P__</Value>
+      <Value>_VMDEBUG=1</Value>
+      <Value>ARDUINO=108019</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>__AVR__</Value>
+      <Value>ARDUINO_AVR_ATmega328</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../Sketch11</Value>
+      <Value>C:/Users/dlcks/Documents/Arduino/libraries/IRremote-4.0.0/src</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src/utility</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles/travis-ci</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/variants/standard</Value>
+      <Value>C:/Users/dlcks/Desktop/아두이노/7SEGME~1/ver/Ide_test/Sketch11</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7//lib/gcc/avr/7.3.0/include</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include-fixed</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.2/include</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.3/include</Value>
+      <Value>{vm.intellisense.add-paths}</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize debugging experience (-Og)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -include=arduino.h</avrgcc.compiler.miscellaneous.OtherFlags>
+  <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__AVR_ATmega328p__</Value>
+      <Value>__AVR_ATmega328P__</Value>
+      <Value>_VMDEBUG=1</Value>
+      <Value>ARDUINO=108019</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>__AVR__</Value>
+      <Value>ARDUINO_AVR_ATmega328</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../Sketch11</Value>
+      <Value>C:/Users/dlcks/Documents/Arduino/libraries/IRremote-4.0.0/src</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src/utility</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles/travis-ci</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/variants/standard</Value>
+      <Value>C:/Users/dlcks/Desktop/아두이노/7SEGME~1/ver/Ide_test/Sketch11</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7//lib/gcc/avr/7.3.0/include</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include-fixed</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.2/include</Value>
+      <Value>C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.3/include</Value>
+      <Value>{vm.intellisense.add-paths}</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize debugging experience (-Og)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+  <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+  <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+  <avrgcccpp.compiler.miscellaneous.OtherFlags>-include=arduino.h</avrgcccpp.compiler.miscellaneous.OtherFlags>
+  <avrgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </avrgcccpp.linker.libraries.Libraries>
+  <avrgcccpp.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
+    </ListValues>
+  </avrgcccpp.assembler.general.IncludePaths>
+  <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+</AvrGccCpp>
+    </ToolchainSettings>
+    <VisualMicroSettings>
+      <VisualMicroSettings>
+        <config.Debug.customdebug_uno_debugger_type>universal</config.Debug.customdebug_uno_debugger_type>
+        <ValidatedAS7>1</ValidatedAS7>
+        <arduino.upload.port>COM6</arduino.upload.port>
+        <arduino.board.name>MiniCore_328</arduino.board.name>
+        <arduino.board.desc>ATmega328</arduino.board.desc>
+        <arduino.board.property_bag>name=ATmega328
+upload.tool=avrdude
+upload.maximum_data_size=2048
+bootloader.tool=avrdude
+bootloader.unlock_bits=0xff
+bootloader.lock_bits=0xcf
+build.core=MCUdude_corefiles
+build.board=AVR_ATmega328
+build.bootloader_led=B5
+build.extra_flags={build.clkpr}
+menu.bootloader.uart0=Yes (UART0)
+menu.bootloader.uart0.upload.maximum_size=32256
+menu.bootloader.uart0.upload.protocol=arduino
+menu.bootloader.uart0.upload.port=UART0
+menu.bootloader.uart0.build.export_merged_output=true
+menu.bootloader.uart0.bootloader.high_fuses=0b1101{bootloader.eesave_bit}110
+menu.bootloader.uart0.bootloader.file=optiboot_flash/bootloaders/{build.mcu}/{build.clock_speed}/optiboot_flash_{build.mcu}_{upload.port}_{upload.speed}_{build.clock_speed}_{build.bootloader_led}.hex
+menu.bootloader.uart1=Yes (UART1 328PB only)
+menu.bootloader.uart1.upload.maximum_size=32256
+menu.bootloader.uart1.upload.protocol=arduino
+menu.bootloader.uart1.upload.port=UART1
+menu.bootloader.uart1.build.export_merged_output=true
+menu.bootloader.uart1.bootloader.high_fuses=0b1101{bootloader.eesave_bit}110
+menu.bootloader.uart1.bootloader.file=optiboot_flash/bootloaders/{build.mcu}/{build.clock_speed}/optiboot_flash_{build.mcu}_{upload.port}_{upload.speed}_{build.clock_speed}_{build.bootloader_led}.hex
+menu.bootloader.no_bootloader=No bootloader
+menu.bootloader.no_bootloader.upload.maximum_size=32768
+menu.bootloader.no_bootloader.build.export_merged_output=false
+menu.bootloader.no_bootloader.bootloader.high_fuses=0b1101{bootloader.eesave_bit}111
+menu.bootloader.no_bootloader.bootloader.file=empty/empty.hex
+menu.eeprom.keep=EEPROM retained
+menu.eeprom.keep.bootloader.eesave_bit=0
+menu.eeprom.erase=EEPROM not retained
+menu.eeprom.erase.bootloader.eesave_bit=1
+menu.variant.modelP=328P / 328PA
+menu.variant.modelP.bootloader.cksel_bits=0111
+menu.variant.modelP.bootloader.cfd_bit=1
+menu.variant.modelP.build.variant=standard
+menu.variant.modelP.build.mcu=atmega328p
+menu.variant.modelNonP=328 / 328A
+menu.variant.modelNonP.bootloader.cksel_bits=0111
+menu.variant.modelNonP.bootloader.cfd_bit=1
+menu.variant.modelNonP.build.variant=standard
+menu.variant.modelNonP.build.mcu=atmega328
+menu.variant.modelPB=328PB
+menu.variant.modelPB.bootloader.cksel_bits=1111
+menu.variant.modelPB.bootloader.cfd_bit=0
+menu.variant.modelPB.build.variant=pb-variant
+menu.variant.modelPB.build.mcu=atmega328pb
+menu.BOD.2v7=BOD 2.7V
+menu.BOD.2v7.bootloader.extended_fuses=0b1111{bootloader.cfd_bit}101
+menu.BOD.4v3=BOD 4.3V
+menu.BOD.4v3.bootloader.extended_fuses=0b1111{bootloader.cfd_bit}100
+menu.BOD.1v8=BOD 1.8V
+menu.BOD.1v8.bootloader.extended_fuses=0b1111{bootloader.cfd_bit}110
+menu.BOD.disabled=BOD  disabled
+menu.BOD.disabled.bootloader.extended_fuses=0b1111{bootloader.cfd_bit}111
+menu.LTO.Os=LTO disabled
+menu.LTO.Os.compiler.c.extra_flags=
+menu.LTO.Os.compiler.c.elf.extra_flags=
+menu.LTO.Os.compiler.cpp.extra_flags=
+menu.LTO.Os.ltoarcmd=avr-ar
+menu.LTO.Os_flto=LTO enabled
+menu.LTO.Os_flto.compiler.c.extra_flags=-Wextra -flto -g
+menu.LTO.Os_flto.compiler.c.elf.extra_flags=-w -flto -g
+menu.LTO.Os_flto.compiler.cpp.extra_flags=-Wextra -flto -g
+menu.LTO.Os_flto.ltoarcmd=avr-gcc-ar
+menu.clock.16MHz_external=External 16 MHz
+menu.clock.16MHz_external.upload.speed=115200
+menu.clock.16MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.16MHz_external.build.clkpr=
+menu.clock.16MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.16MHz_external.build.f_cpu=16000000L
+menu.clock.20MHz_external=External 20 MHz
+menu.clock.20MHz_external.upload.speed=115200
+menu.clock.20MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.20MHz_external.build.clkpr=
+menu.clock.20MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.20MHz_external.build.f_cpu=20000000L
+menu.clock.18_432MHz_external=External 18.432 MHz
+menu.clock.18_432MHz_external.upload.speed=115200
+menu.clock.18_432MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.18_432MHz_external.build.clkpr=
+menu.clock.18_432MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.18_432MHz_external.build.f_cpu=18432000L
+menu.clock.14_7456MHz_external=External 14.7456 MHz
+menu.clock.14_7456MHz_external.upload.speed=115200
+menu.clock.14_7456MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.14_7456MHz_external.build.clkpr=
+menu.clock.14_7456MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.14_7456MHz_external.build.f_cpu=14745600L
+menu.clock.12MHz_external=External 12 MHz
+menu.clock.12MHz_external.upload.speed=57600
+menu.clock.12MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.12MHz_external.build.clkpr=
+menu.clock.12MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.12MHz_external.build.f_cpu=12000000L
+menu.clock.11_0592MHz_external=External 11.0592 MHz
+menu.clock.11_0592MHz_external.upload.speed=115200
+menu.clock.11_0592MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.11_0592MHz_external.build.clkpr=
+menu.clock.11_0592MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.11_0592MHz_external.build.f_cpu=11059200L
+menu.clock.8MHz_external=External 8 MHz
+menu.clock.8MHz_external.upload.speed=57600
+menu.clock.8MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.8MHz_external.build.clkpr=
+menu.clock.8MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.8MHz_external.build.f_cpu=8000000L
+menu.clock.7_3728MHz_external=External 7.3728 MHz
+menu.clock.7_3728MHz_external.upload.speed=115200
+menu.clock.7_3728MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.7_3728MHz_external.build.clkpr=
+menu.clock.7_3728MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.7_3728MHz_external.build.f_cpu=7372800L
+menu.clock.4MHz_external=External 4 MHz
+menu.clock.4MHz_external.upload.speed=9600
+menu.clock.4MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.4MHz_external.build.clkpr=
+menu.clock.4MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.4MHz_external.build.f_cpu=4000000L
+menu.clock.3_6864MHz_external=External 3.6864 MHz
+menu.clock.3_6864MHz_external.upload.speed=115200
+menu.clock.3_6864MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.3_6864MHz_external.build.clkpr=
+menu.clock.3_6864MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.3_6864MHz_external.build.f_cpu=3686400L
+menu.clock.2MHz_external=External 2 MHz
+menu.clock.2MHz_external.upload.speed=9600
+menu.clock.2MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.2MHz_external.build.clkpr=
+menu.clock.2MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.2MHz_external.build.f_cpu=2000000L
+menu.clock.1_8432MHz_external=External 1.8432 MHz
+menu.clock.1_8432MHz_external.upload.speed=115200
+menu.clock.1_8432MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.1_8432MHz_external.build.clkpr=
+menu.clock.1_8432MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.1_8432MHz_external.build.f_cpu=1843200L
+menu.clock.1MHz_external=External 1 MHz
+menu.clock.1MHz_external.upload.speed=9600
+menu.clock.1MHz_external.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+menu.clock.1MHz_external.build.clkpr=
+menu.clock.1MHz_external.build.clock_speed={build.f_cpu}
+menu.clock.1MHz_external.build.f_cpu=1000000L
+menu.clock.8MHz_internal=Internal 8 MHz
+menu.clock.8MHz_internal.upload.speed=38400
+menu.clock.8MHz_internal.bootloader.low_fuses=0xe2
+menu.clock.8MHz_internal.build.clkpr=
+menu.clock.8MHz_internal.build.clock_speed={build.f_cpu}
+menu.clock.8MHz_internal.build.f_cpu=8000000L
+menu.clock.4MHz_internal=Internal 4 MHz
+menu.clock.4MHz_internal.upload.speed=9600
+menu.clock.4MHz_internal.bootloader.low_fuses=0xe2
+menu.clock.4MHz_internal.build.clkpr=-DOSC_PRESCALER=0x01
+menu.clock.4MHz_internal.build.clock_speed=8000000L
+menu.clock.4MHz_internal.build.f_cpu=4000000L
+menu.clock.2MHz_internal=Internal 2 MHz
+menu.clock.2MHz_internal.upload.speed=9600
+menu.clock.2MHz_internal.bootloader.low_fuses=0xe2
+menu.clock.2MHz_internal.build.clkpr=-DOSC_PRESCALER=0x02
+menu.clock.2MHz_internal.build.clock_speed=8000000L
+menu.clock.2MHz_internal.build.f_cpu=2000000L
+menu.clock.1MHz_internal=Internal 1 MHz
+menu.clock.1MHz_internal.upload.speed=9600
+menu.clock.1MHz_internal.bootloader.low_fuses=0x62
+menu.clock.1MHz_internal.build.clkpr=
+menu.clock.1MHz_internal.build.clock_speed={build.f_cpu}
+menu.clock.1MHz_internal.build.f_cpu=1000000L
+runtime.ide.path=c:\arduino-1.8.19-windows\arduino-1.8.19
+runtime.os=windows
+build.system.path=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1\system
+runtime.ide.version=108019
+target_package=MiniCore
+target_platform=avr
+runtime.hardware.path=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr
+originalid=328
+intellisense.tools.path={runtime.tools.avr-gcc.path}\
+intellisense.include.paths={intellisense.tools.path}\lib\gcc\avr\7.3.0\include;{intellisense.tools.path}avr\include;{intellisense.tools.path}\lib\gcc\avr\7.3.0\include;{intellisense.tools.path}avr\include-fixed;{intellisense.tools.path}avr\include\avr;{intellisense.tools.path}lib\gcc\avr\4.8.1\include;{intellisense.tools.path}lib\gcc\avr\4.9.2\include;{intellisense.tools.path}lib\gcc\avr\4.9.3\include;{vm.intellisense.add-paths}
+tools.atprogram.cmd.path=%AVRSTUDIO_EXE_PATH%\atbackend\atprogram
+tools.atprogram.cmd.setwinpath=true
+tools.atprogram.program.params.verbose=-v
+tools.atprogram.program.params.quiet=-q
+tools.atprogram.program.pattern="{cmd.path}" -d {build.mcu} {program.verbose} {program.extra_params} program -c -f "{build.path}\{build.project_name}.hex"
+tools.atprogram.program.xpattern="{cmd.path}" {AVRSTUDIO_BACKEND_CONNECTION} -d {build.mcu} {program.verbose} {program.extra_params} program -c -f "{build.path}\{build.project_name}.hex"
+tools.atprogram.erase.params.verbose=-v
+tools.atprogram.erase.params.quiet=-q
+tools.atprogram.bootloader.params.verbose=-v
+tools.atprogram.bootloader.params.quiet=-q
+tools.atprogram.bootloader.pattern="{cmd.path}" -d {build.mcu} {bootloader.verbose}  program -c -f "{runtime.ide.path}\hardware\arduino\avr\bootloaders\{bootloader.file}"
+ide.compiler_flags_no_opt=-Og
+tools.gdbstub.cmd=avr-gdb.exe
+tools.gdbstub.path={runtime.tools.avr-gcc.path}/bin
+tools.gdbstub.alternative.path=Micro Platforms/visualmicro/tools/avr-gdb/7.3.0-atmel3.6.1-arduino5
+tools.gdbstub.debug.args="{{{build.path}/{build.project_name}.elf}}" -ex "target remote \\.\{serial.debug.port}"
+tools.gdbstub.showLocalSerialPort=true
+debug_menu.hwdebugger.gdbstub=GDB Stub
+debug_menu.hwdebugger.gdbstub.debug.tool=gdbstub
+meta_gdbstub.sentence=This debugger requires the avr-debugger library (by Jan Dolinay) be included in the project (install via Library Manager or from GitHub).
+meta_gdbstub.comment=To use this debugger, install 'avr-debugger' library, add 1) '#include &lt;avr8-stub.h&gt;'  2) add 'debug_init();' to the 'setup()', and add 'breakpoint();' to the top of 'loop()'. Set vMicro &gt; Debugger &gt; 'Compiler Optimization' to 'No Project', 'No Project + Libraries' or 'None' when debugging (NOTE: This might cause compilation errors with certain code such as HardwareSerial.)
+meta_gdbstub.image.connect=https://www.visualmicro.com/pics/Debug-Help-Uno_USBOnly.png
+meta_gdbstub.image.operation=https://www.visualmicro.com/pics/Debug-Break-Uno-GDBStub-VSOnly.png
+meta_gdbstub.reference.usage.url=https://www.visualmicro.com/page/User-Guide.aspx?doc=Arduino-gdb-Tutorial.html
+version=2.2.0
+compiler.warning_flags=-w
+compiler.warning_flags.none=-w
+compiler.warning_flags.default=
+compiler.warning_flags.more=-Wall
+compiler.warning_flags.all=-Wall -Wextra
+compiler.path={runtime.tools.avr-gcc.path}/bin/
+compiler.c.cmd=avr-gcc
+compiler.c.flags=-c -g -Os {compiler.warning_flags} -std=gnu11 -ffunction-sections -fdata-sections -MMD
+compiler.c.elf.flags={compiler.warning_flags} -Os -Wl,--gc-sections
+compiler.c.elf.cmd=avr-gcc
+compiler.S.flags=-c -g -x assembler-with-cpp
+compiler.cpp.cmd=avr-g++
+compiler.cpp.flags=-c -g -Os {compiler.warning_flags} -std=gnu++17 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD
+compiler.ar.cmd={ltoarcmd}
+compiler.ar.flags=rcs
+compiler.objcopy.cmd=avr-objcopy
+compiler.objcopy.eep.flags=-O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0
+compiler.objdump.cmd=avr-objdump
+compiler.objdump.flags=--disassemble --source --line-numbers --demangle --section=.text
+compiler.elf2hex.flags=-O ihex -R .eeprom
+compiler.elf2hex.bin.flags=-O binary -R .eeprom
+compiler.elf2hex.cmd=avr-objcopy
+compiler.ldflags=
+compiler.size.cmd=avr-size
+compiler.c.extra_flags=
+compiler.c.elf.extra_flags=
+compiler.S.extra_flags=
+compiler.cpp.extra_flags=
+compiler.ar.extra_flags=
+compiler.objcopy.eep.extra_flags=
+compiler.elf2hex.extra_flags=
+recipe.c.o.pattern="{compiler.path}{compiler.c.cmd}" {compiler.c.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.c.extra_flags} {build.extra_flags} {includes} "{source_file}" -o "{object_file}"
+recipe.cpp.o.pattern="{compiler.path}{compiler.cpp.cmd}" {compiler.cpp.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} "{source_file}" -o "{object_file}"
+recipe.S.o.pattern="{compiler.path}{compiler.c.cmd}" {compiler.S.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.S.extra_flags} {build.extra_flags} {includes} "{source_file}" -o "{object_file}"
+archive_file_path={build.path}/{archive_file}
+recipe.ar.pattern="{compiler.path}{compiler.ar.cmd}" {compiler.ar.flags} {compiler.ar.extra_flags} "{archive_file_path}" "{object_file}"
+recipe.c.combine.pattern="{compiler.path}{compiler.c.elf.cmd}" {compiler.c.elf.flags} -mmcu={build.mcu} {compiler.c.elf.extra_flags} -o "{build.path}/{build.project_name}.elf" {object_files} "{build.path}/{archive_file}" "-L{build.path}" -lm
+recipe.objcopy.eep.pattern="{compiler.path}{compiler.objcopy.cmd}" {compiler.objcopy.eep.flags} {compiler.objcopy.eep.extra_flags} "{build.path}/{build.project_name}.elf" "{build.path}/{build.project_name}.eep"
+recipe.objcopy.hex.pattern="{compiler.path}{compiler.elf2hex.cmd}" {compiler.elf2hex.flags} {compiler.elf2hex.extra_flags} "{build.path}/{build.project_name}.elf" "{build.path}/{build.project_name}.hex"
+recipe.hooks.objcopy.postobjcopy.1.pattern.windows=cmd /C echo. &amp;&amp; "{compiler.path}{compiler.objdump.cmd}" {compiler.objdump.flags} "{build.path}/{build.project_name}.elf" &gt; "{build.path}/{build.project_name}_{build.mcu}_{build.f_cpu}.lst"
+recipe.hooks.objcopy.postobjcopy.1.pattern.linux=chmod +x "{runtime.platform.path}/scripts/create_disassembler_listing.sh"
+recipe.hooks.objcopy.postobjcopy.1.pattern.macosx=chmod +x "{runtime.platform.path}/scripts/create_disassembler_listing.sh"
+recipe.hooks.objcopy.postobjcopy.2.pattern.linux="{runtime.platform.path}/scripts/create_disassembler_listing.sh" "{compiler.path}{compiler.objdump.cmd}" "{compiler.objdump.flags}" "{build.path}/{build.project_name}.elf" "{build.path}/{build.project_name}_{build.mcu}_{build.f_cpu}.lst"
+recipe.hooks.objcopy.postobjcopy.2.pattern.macosx="{runtime.platform.path}/scripts/create_disassembler_listing.sh" "{compiler.path}{compiler.objdump.cmd}" "{compiler.objdump.flags}" "{build.path}/{build.project_name}.elf" "{build.path}/{build.project_name}_{build.mcu}_{build.f_cpu}.lst"
+recipe.output.tmp_file={build.project_name}.hex
+recipe.output.save_file={build.project_name}_{build.mcu}_{build.f_cpu}.hex
+recipe.hooks.savehex.presavehex.1.pattern.windows="{runtime.platform.path}/scripts/delete_merged_output.bat" {build.export_merged_output} "{build.path}\{build.project_name}.with_bootloader.hex"
+recipe.hooks.savehex.presavehex.2.pattern.windows=cmd /C copy "{build.path}\{build.project_name}_{build.mcu}_{build.f_cpu}.lst" "{sketch_path}"
+recipe.hooks.savehex.presavehex.1.pattern.linux=chmod +x "{runtime.platform.path}/scripts/delete_merged_output.sh"
+recipe.hooks.savehex.presavehex.2.pattern.linux="{runtime.platform.path}/scripts/delete_merged_output.sh" {build.export_merged_output} "{build.path}/{build.project_name}.with_bootloader.hex"
+recipe.hooks.savehex.presavehex.3.pattern.linux=cp "{build.path}/{build.project_name}_{build.mcu}_{build.f_cpu}.lst" "{sketch_path}"
+recipe.hooks.savehex.presavehex.1.pattern.macosx=chmod +x "{runtime.platform.path}/scripts/delete_merged_output.sh"
+recipe.hooks.savehex.presavehex.2.pattern.macosx="{runtime.platform.path}/scripts/delete_merged_output.sh" {build.export_merged_output} "{build.path}/{build.project_name}.with_bootloader.hex"
+recipe.hooks.savehex.presavehex.3.pattern.macosx=cp "{build.path}/{build.project_name}_{build.mcu}_{build.f_cpu}.lst" "{sketch_path}"
+recipe.size.pattern="{compiler.path}{compiler.size.cmd}" -A "{build.path}/{build.project_name}.elf"
+recipe.size.regex=^(?:\.text|\.data|\.bootloader)\s+([0-9]+).*
+recipe.size.regex.data=^(?:\.data|\.bss|\.noinit)\s+([0-9]+).*
+recipe.size.regex.eeprom=^(?:\.eeprom)\s+([0-9]+).*
+preproc.includes.flags=-w -x c++ -M -MG -MP
+recipe.preproc.includes="{compiler.path}{compiler.cpp.cmd}" {compiler.cpp.flags} {preproc.includes.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} "{source_file}"
+preproc.macros.flags=-w -x c++ -E -CC
+recipe.preproc.macros="{compiler.path}{compiler.cpp.cmd}" {compiler.cpp.flags} {preproc.macros.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} "{source_file}" -o "{preprocessed_file_path}"
+tools.avrdude.path={runtime.tools.avrdude.path}
+tools.avrdude.cmd.path={path}/bin/avrdude
+tools.avrdude.config.path={runtime.platform.path}/avrdude.conf
+tools.avrdude.upload.params.verbose=-v
+tools.avrdude.upload.params.quiet=-q -q
+tools.avrdude.upload.verify=
+tools.avrdude.upload.params.noverify=-V
+tools.avrdude.upload.pattern="{cmd.path}" "-C{config.path}" {upload.verbose} {upload.verify} -p{build.mcu} -c{upload.protocol} -P{serial.port} -b{upload.speed} -D "-Uflash:w:{build.path}/{build.project_name}.hex:i"
+tools.avrdude.program.params.verbose=-v
+tools.avrdude.program.params.quiet=-q -q
+tools.avrdude.program.params.noverify=-V
+tools.avrdude.program.pattern="{cmd.path}" "-C{config.path}" {program.verbose} {program.verify} -p{build.mcu} -c{protocol} {program.extra_params} "-Uflash:w:{build.path}/{build.project_name}.with_bootloader.hex:i"
+tools.avrdude.erase.params.verbose=-v
+tools.avrdude.erase.params.quiet=-q -q
+tools.avrdude.erase.pattern="{cmd.path}" "-C{config.path}" -v -p{build.mcu} -c{protocol} {program.extra_params} -e -Ulock:w:{bootloader.unlock_bits}:m -Uefuse:w:{bootloader.extended_fuses}:m -Uhfuse:w:{bootloader.high_fuses}:m -Ulfuse:w:{bootloader.low_fuses}:m
+tools.avrdude.bootloader.params.verbose=-v
+tools.avrdude.bootloader.params.quiet=-q -q
+tools.avrdude.bootloader.pattern="{cmd.path}" "-C{config.path}" -v -p{build.mcu} -c{protocol} {program.extra_params} "-Uflash:w:{runtime.platform.path}/bootloaders/{bootloader.file}:i" -Ulock:w:{bootloader.lock_bits}:m
+tools.avrdude_remote.upload.pattern=/usr/bin/run-avrdude /tmp/sketch.hex {upload.verbose} -p{build.mcu}
+build.usb_manufacturer="Unknown"
+build.usb_flags=-DUSB_VID={build.vid} -DUSB_PID={build.pid} '-DUSB_MANUFACTURER={build.usb_manufacturer}' '-DUSB_PRODUCT={build.usb_product}'
+recipe.hooks.objcopy.postobjcopy.1.pattern=cmd /C echo. &amp;&amp; "{compiler.path}{compiler.objdump.cmd}" {compiler.objdump.flags} "{build.path}/{build.project_name}.elf" &gt; "{build.path}/{build.project_name}_{build.mcu}_{build.f_cpu}.lst"
+recipe.hooks.savehex.presavehex.1.pattern="{runtime.platform.path}/scripts/delete_merged_output.bat" {build.export_merged_output} "{build.path}\{build.project_name}.with_bootloader.hex"
+recipe.hooks.savehex.presavehex.2.pattern=cmd /C copy "{build.path}\{build.project_name}_{build.mcu}_{build.f_cpu}.lst" "{sketch_path}"
+upload.verify=
+tools.vmopenocd.cmd=bin/openocd.exe
+tools.vmopenocd.cmd.windows=bin/openocd.exe
+tools.vmopenocd.debug.params.verbose=-d2
+tools.vmopenocd.debug.params.quiet=-d0
+tools.vmopenocd.debug.address=localhost:3333
+tools.vmopenocd.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.vmopenocd.scriptPath=-s "{path}/scripts/"
+tools.vmopenocd.logging=-l "{{build.path}/{build.project_name}_DebugOpenOCD.log}"
+tools.vmopenocd.boardCmd=
+tools.vmopenocd.targetCmd=
+tools.vmopenocd.initCmd=
+tools.vmopenocd.debug.pattern="{path}/{cmd}" {debug.verbose} {logging} {scriptPath} {boardCmd} {targetCmd} {initCmd}
+tools.vmopenocd.program.cmd=bin/openocd.exe
+tools.vmopenocd.program.cmd.windows=bin/openocd.exe
+tools.vmopenocd.program.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.vmopenocd.program.address=localhost:3333
+tools.vmopenocd.program.params.verbose=-d2
+tools.vmopenocd.program.params.quiet=-d0
+tools.vmopenocd.program.elf.message=****[vMicro]**** Uploading ELF :
+tools.vmopenocd.program.pattern="{path}/{cmd}" {program.verbose} {scriptPath} {boardCmd} {targetCmd} -c "echo -n {{program.elf.message}}" {programCmd}
+tools.atmelICE.protocol=
+tools.atmelICE.debug.cmd=arm-none-eabi-gdb.exe
+tools.atmelICE.debug.path={runtime.tools.arm-none-eabi-gcc.path}/bin
+tools.atmelICE.debug.pattern="{path}/{cmd}"
+tools.atmelICE.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.atmelICE.server.initCmd=-c "init"
+tools.atmelICE.server.boardCmd=-c "adapter driver cmsis-dap" -c "cmsis_dap_vid_pid 0x03eb 0x2141"
+tools.atmelICE.server.tool=vmopenocd
+tools.atmelICE.debug.server=vmopenocd
+tools.atmelICE.program.scriptPath=-s "{program.path}/scripts/"
+tools.atmelICE.program.boardCmd=-c "adapter driver cmsis-dap" -c "cmsis_dap_vid_pid 0x03eb 0x2141"
+tools.atmelICE.program.cmd=bin/openocd.exe
+tools.atmelICE.program.cmd.windows=bin/openocd.exe
+tools.atmelICE.program.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.atmelICE.program.address=localhost:3333
+tools.atmelICE.program.params.verbose=-d2
+tools.atmelICE.program.params.quiet=-d0
+tools.atmelICE.program.elf.message=****[vMicro]**** Uploading ELF :
+tools.atmelICE.program.pattern="{program.path}/{program.cmd}" {program.verbose} {program.scriptPath} {program.boardCmd} {program.targetCmd} -c "echo -n {{program.elf.message}}" {program.programCmd}
+tools.atmelICE.program.extra_params=
+tools.atmelICE.program.protocol=
+tools.atmelICE.erase.params.verbose=-d3
+tools.atmelICE.erase.params.quiet=-d0
+tools.atmelICE.erase.pattern=
+tools.jlink.cmd=arm-none-eabi-gdb.exe
+tools.jlink.path={runtime.tools.arm-none-eabi-gcc.path}/bin
+tools.jlink.pattern="{path}/{cmd}"
+tools.jlink.server.tool=vmopenocd
+tools.jlink.debug.server=vmopenocd
+tools.jlink.server.boardCmd=-f "interface/jlink.cfg"
+tools.jlink.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.jlink.server.initCmd=-c "init"
+tools.jlink.program.scriptPath=-s "{program.path}/scripts/"
+tools.jlink.program.boardCmd=-f "interface/jlink.cfg"
+tools.jlink.program.cmd=bin/openocd.exe
+tools.jlink.program.cmd.windows=bin/openocd.exe
+tools.jlink.program.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.jlink.program.address=localhost:3333
+tools.jlink.program.params.verbose=-d2
+tools.jlink.program.params.quiet=-d0
+tools.jlink.program.elf.message=****[vMicro]**** Uploading ELF :
+tools.jlink.program.pattern="{program.path}/{program.cmd}" {program.verbose} {program.scriptPath} {program.boardCmd} {program.targetCmd} -c "echo -n {{program.elf.message}}" {program.programCmd}
+tools.jlink.upload.scriptPath=-s "{upload.path}/scripts/"
+tools.jlink.upload.boardCmd=-f "interface/jlink.cfg"
+tools.jlink.upload.cmd=bin/openocd.exe
+tools.jlink.upload.cmd.windows=bin/openocd.exe
+tools.jlink.upload.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.jlink.upload.address=localhost:3333
+tools.jlink.upload.params.verbose=-d2
+tools.jlink.upload.params.quiet=-d0
+tools.jlink.upload.elf.message=****[vMicro]**** Uploading ELF :
+tools.jlink.upload.pattern="{upload.path}/{upload.cmd}" {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c "echo -n {{upload.elf.message}}" {upload.programCmd}
+tools.bmp_upload.cmd=arm-none-eabi-gdb.exe
+tools.bmp_upload.debug.path={runtime.tools.arm-none-eabi-gcc.path}/bin/
+tools.bmp_upload.program.cmd=bin/arm-none-eabi-gdb.exe
+tools.bmp_upload.program.cmd.windows=bin/arm-none-eabi-gdb.exe
+tools.bmp_upload.program.path={runtime.tools.arm-none-eabi-gcc.path}
+tools.bmp_upload.upload.cmd=bin/arm-none-eabi-gdb.exe
+tools.bmp_upload.upload.cmd.windows=bin/arm-none-eabi-gdb.exe
+tools.bmp_upload.upload.path={runtime.tools.arm-none-eabi-gcc.path}
+tools.bmp_upload.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.bmp_upload.server.initCmd=-c "init"
+tools.bmp_upload.showLocalSerialPort=true
+tools.bmp_upload.debug.server=
+tools.stlinkv2.description=
+tools.stlinkv2.cmd=arm-none-eabi-gdb.exe
+tools.stlinkv2.path={runtime.tools.arm-none-eabi-gcc.path}/bin
+tools.stlinkv2.pattern="{path}/{cmd}"
+tools.stlinkv2.server.tool=vmopenocd
+tools.stlinkv2.debug.server=vmopenocd
+tools.stlinkv2.server.boardCmd=-f "interface/stlink.cfg"
+tools.stlinkv2.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.stlinkv2.server.initCmd=-c "init"
+tools.stlinkv2.upload.scriptPath=-s "{upload.path}/scripts/"
+tools.stlinkv2.upload.boardCmd=-f "interface/stlink.cfg"
+tools.stlinkv2.upload.cmd=bin/openocd.exe
+tools.stlinkv2.upload.cmd.windows=bin/openocd.exe
+tools.stlinkv2.upload.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.stlinkv2.upload.address=localhost:3333
+tools.stlinkv2.upload.params.verbose=-d2
+tools.stlinkv2.upload.params.quiet=-d0
+tools.stlinkv2.upload.elf.message=****[vMicro]**** Uploading ELF :
+tools.stlinkv2.upload.pattern="{upload.path}/{upload.cmd}" {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c "echo -n {{upload.elf.message}}" {upload.programCmd}
+tools.stlinkv2.upload.extra_params=
+tools.stlinkv2.upload.protocol=
+tools.stlinkv2.protocol=
+tools.f2232mm.cmd=arm-none-eabi-gdb.exe
+tools.f2232mm.path={runtime.tools.arm-none-eabi-gcc.path}/bin
+tools.f2232mm.pattern="{path}/{cmd}" {args}
+tools.f2232mm.server.tool=vmopenocd
+tools.f2232mm.debug.server=vmopenocd
+tools.f2232mm.server.boardCmd=-f "interface/ftdi/minimodule.cfg"
+tools.f2232mm.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.f2232mm.server.initCmd=-c "init"
+tools.f2232mm.upload.scriptPath=-s "{upload.path}/scripts/"
+tools.f2232mm.upload.boardCmd=-f "interface/ftdi/minimodule.cfg"
+tools.f2232mm.upload.cmd=bin/openocd.exe
+tools.f2232mm.upload.cmd.windows=bin/openocd.exe
+tools.f2232mm.upload.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.f2232mm.upload.address=localhost:3333
+tools.f2232mm.upload.params.verbose=-d2
+tools.f2232mm.upload.params.quiet=-d0
+tools.f2232mm.upload.elf.message=****[vMicro]**** Uploading ELF :
+tools.f2232mm.upload.pattern="{upload.path}/{upload.cmd}" {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c "echo -n {{upload.elf.message}}" {upload.programCmd}
+tools.f2232mm.upload.extra_params=
+tools.f2232mm.upload.protocol=
+tools.f2232mm.protocol=
+tools.f2232h.server.boardCmd=-f "interface/ftdi/minimodule-lowcost.cfg"
+tools.f2232h.cmd=arm-none-eabi-gdb.exe
+tools.f2232h.path={runtime.tools.arm-none-eabi-gcc.path}/bin
+tools.f2232h.pattern="{path}/{cmd}"
+tools.f2232h.server.tool=vmopenocd
+tools.f2232h.debug.server=vmopenocd
+tools.f2232h.server.initCmd=-c "init; reset halt"
+vs-cmd.Debug.AttachtoProcess.tools.f2232h.server.initCmd=-c "init"
+tools.f2232h.upload.scriptPath=-s "{upload.path}/scripts/"
+tools.f2232h.upload.boardCmd=-f "interface/ftdi/minimodule-lowcost.cfg"
+tools.f2232h.upload.cmd=bin/openocd.exe
+tools.f2232h.upload.cmd.windows=bin/openocd.exe
+tools.f2232h.upload.path={runtime.tools.openocd-0.10.0.20200213.path}
+tools.f2232h.upload.address=localhost:3333
+tools.f2232h.upload.params.verbose=-d2
+tools.f2232h.upload.params.quiet=-d0
+tools.f2232h.upload.elf.message=****[vMicro]**** Uploading ELF :
+tools.f2232h.upload.pattern="{upload.path}/{upload.cmd}" {upload.verbose} {upload.scriptPath} {upload.boardCmd} {upload.targetCmd} -c "echo -n {{upload.elf.message}}" {upload.programCmd}
+tools.f2232h.upload.extra_params=
+tools.f2232h.upload.protocol=
+tools.f2232h.protocol=
+vm.platform.root.path=C:\Program Files (x86)\Atmel\Studio\7.0\Extensions\ejiwfyoc.ucr\Micro Platforms\arduino16x
+usbasp.name=USBasp
+usbasp.communication=usb
+usbasp.protocol=usbasp
+usbasp.program.protocol=usbasp
+usbasp.program.tool=avrdude
+usbasp.program.extra_params=
+usbasp_slow.name=USBasp slow
+usbasp_slow.communication=usb
+usbasp_slow.protocol=usbasp
+usbasp_slow.program.protocol=usbasp
+usbasp_slow.program.tool=avrdude
+usbasp_slow.program.extra_params=-B32
+usbtinyisp.name=USBtinyISP
+usbtinyisp.protocol=usbtiny
+usbtinyisp.program.tool=avrdude
+usbtinyisp.program.extra_params=
+usbtinyisp_slow.name=USBtinyISP slow
+usbtinyisp_slow.protocol=usbtiny
+usbtinyisp_slow.program.tool=avrdude
+usbtinyisp_slow.program.extra_params=-B32
+arduinoasisp.name=Arduino as ISP
+arduinoasisp.communication=serial
+arduinoasisp.protocol=stk500v1
+arduinoasisp.speed=19200
+arduinoasisp.program.protocol=stk500v1
+arduinoasisp.program.speed=19200
+arduinoasisp.program.tool=avrdude
+arduinoasisp.program.extra_params=-P{serial.port} -b{program.speed}
+xplainedmini.name=Xplained Mini
+xplainedmini.communication=usb
+xplainedmini.protocol=xplainedmini
+xplainedmini.program.protocol=xplainedmini
+xplainedmini.program.tool=avrdude
+xplainedmini.program.extra_params=
+atmel_ice.name=Atmel-ICE ISP
+atmel_ice.communication=usb
+atmel_ice.protocol=atmelice_isp
+atmel_ice.program.protocol=atmelice_isp
+atmel_ice.program.tool=avrdude
+atmel_ice.program.extra_params=
+pickit4_isp.name=PICkit4 ISP
+pickit4_isp.communication=usb
+pickit4_isp.protocol=pickit4_isp
+pickit4_isp.program.protocol=pickit4_isp
+pickit4_isp.program.tool=avrdude
+pickit4_isp.program.extra_params=
+snap_isp.name=MPLAB SNAP ISP
+snap_isp.communication=usb
+snap_isp.protocol=snap_isp
+snap_isp.program.protocol=snap_isp
+snap_isp.program.tool=avrdude
+snap_isp.program.extra_params=
+avrispmkii.name=AVRISP mkII
+avrispmkii.communication=usb
+avrispmkii.protocol=stk500v2
+avrispmkii.program.protocol=stk500v2
+avrispmkii.program.tool=avrdude
+avrispmkii.program.extra_params=
+stk500.name=STK500 as ISP (MiniCore)
+stk500.communication=serial
+stk500.protocol=stk500
+stk500.program.protocol=stk500
+stk500.program.tool=avrdude
+stk500.program.extra_params=-P {serial.port}
+compiler.libraries.ldflags=
+pluggable_discovery.required.0=builtin:serial-discovery
+pluggable_discovery.required.1=builtin:mdns-discovery
+pluggable_monitor.required.serial=builtin:serial-monitor
+tools.avrdude.program.verify=
+tools.avrdude.network_cmd={runtime.tools.arduinoOTA.path}/bin/arduinoOTA
+tools.avrdude.upload.network_pattern="{network_cmd}" -address {serial.port} -port {upload.network.port} -sketch "{build.path}/{build.project_name}.hex" -upload {upload.network.endpoint_upload} -sync {upload.network.endpoint_sync} -reset {upload.network.endpoint_reset} -sync_exp {upload.network.sync_return}
+tools.arduino_ota.cmd={runtime.tools.arduinoOTA.path}/bin/arduinoOTA
+tools.arduino_ota.upload.pattern="{cmd}" -address {upload.port.address} -port {upload.port.properties.port} -sketch "{build.path}/{build.project_name}.hex" -upload {upload.port.properties.endpoint_upload} -sync {upload.port.properties.endpoint_sync} -reset {upload.port.properties.endpoint_reset} -sync_exp {upload.port.properties.sync_return}
+avrisp.name=AVR ISP
+avrisp.communication=serial
+avrisp.protocol=stk500v1
+avrisp.program.protocol=stk500v1
+avrisp.program.tool=avrdude
+avrisp.program.tool.default=avrdude
+avrisp.program.extra_params=-P{serial.port}
+avrispmkii.program.tool.default=avrdude
+usbtinyisp.program.tool.default=avrdude
+arduinoisp.name=ArduinoISP
+arduinoisp.protocol=arduinoisp
+arduinoisp.program.tool=avrdude
+arduinoisp.program.tool.default=avrdude
+arduinoisp.program.extra_params=
+arduinoisporg.name=ArduinoISP.org
+arduinoisporg.protocol=arduinoisporg
+arduinoisporg.program.tool=avrdude
+arduinoisporg.program.tool.default=avrdude
+arduinoisporg.program.extra_params=
+usbasp.program.tool.default=avrdude
+parallel.name=Parallel Programmer
+parallel.protocol=dapa
+parallel.force=true
+parallel.program.tool=avrdude
+parallel.program.tool.default=avrdude
+parallel.program.extra_params=-F
+arduinoasisp.program.tool.default=avrdude
+arduinoasispatmega32u4.name=Arduino as ISP (ATmega32U4)
+arduinoasispatmega32u4.communication=serial
+arduinoasispatmega32u4.protocol=arduino
+arduinoasispatmega32u4.speed=19200
+arduinoasispatmega32u4.program.protocol=arduino
+arduinoasispatmega32u4.program.speed=19200
+arduinoasispatmega32u4.program.tool=avrdude
+arduinoasispatmega32u4.program.tool.default=avrdude
+arduinoasispatmega32u4.program.extra_params=-P{serial.port} -b{program.speed}
+usbGemma.name=Arduino Gemma
+usbGemma.protocol=arduinogemma
+usbGemma.program.tool=avrdude
+usbGemma.program.tool.default=avrdude
+usbGemma.program.extra_params=
+usbGemma.config.path={runtime.platform.path}/bootloaders/gemma/avrdude.conf
+buspirate.name=BusPirate as ISP
+buspirate.communication=serial
+buspirate.protocol=buspirate
+buspirate.program.protocol=buspirate
+buspirate.program.tool=avrdude
+buspirate.program.tool.default=avrdude
+buspirate.program.extra_params=-P{serial.port}
+stk500.program.tool.default=avrdude
+jtag3isp.name=Atmel JTAGICE3 (ISP mode)
+jtag3isp.communication=usb
+jtag3isp.protocol=jtag3isp
+jtag3isp.program.protocol=jtag3isp
+jtag3isp.program.tool=avrdude
+jtag3isp.program.tool.default=avrdude
+jtag3isp.program.extra_params=
+jtag3.name=Atmel JTAGICE3 (JTAG mode)
+jtag3.communication=usb
+jtag3.protocol=jtag3
+jtag3.program.protocol=jtag3
+jtag3.program.tool=avrdude
+jtag3.program.tool.default=avrdude
+jtag3.program.extra_params=-B0.1
+atmel_ice.program.tool.default=avrdude
+medbg.name=Atmel mEDBG
+medbg.communication=usb
+medbg.protocol=stk500v2
+medbg.program.protocol=stk500v2
+medbg.program.tool=avrdude
+medbg.program.extra_params=-Pusb
+runtime.tools.avr-gcc.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7
+runtime.tools.avr-gcc-7.3.0-atmel3.6.1-arduino7.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7
+runtime.tools.avrdude.path=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\tools\avrdude\7.1-arduino.1
+runtime.tools.avrdude-7.1-arduino.1.path=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\tools\avrdude\7.1-arduino.1
+runtime.tools.arduinoOTA.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\arduinoOTA\1.3.0
+runtime.tools.arduinoOTA-1.3.0.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\arduinoOTA\1.3.0
+runtime.tools.avrdude-6.3.0-arduino17.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\avrdude\6.3.0-arduino17
+runtime.tools.ctags.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\ctags\5.8-arduino11
+runtime.tools.ctags-5.8-arduino11.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\ctags\5.8-arduino11
+runtime.tools.mdns-discovery.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\mdns-discovery\1.0.6
+runtime.tools.mdns-discovery-1.0.6.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\mdns-discovery\1.0.6
+runtime.tools.serial-discovery.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\serial-discovery\1.3.3
+runtime.tools.serial-discovery-1.3.3.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\serial-discovery\1.3.3
+runtime.tools.serial-monitor.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\serial-monitor\0.12.0
+runtime.tools.serial-monitor-0.12.0.path=C:\Users\dlcks\AppData\Local\arduino15\packages\builtin\tools\serial-monitor\0.12.0
+runtime.vm.boardinfo.id=MiniCore_328
+runtime.vm.boardinfo.name=MiniCore_328
+runtime.vm.boardinfo.desc=ATmega328
+runtime.vm.boardinfo.src_location=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1
+ide.hint=Use installed IDE (hardware, reference/help + libraries)
+ide.location.key=Arduino16x
+ide.location.ide.winreg=Arduino 1.6.x Application
+ide.location.sketchbook.winreg=Arduino 1.6.x Sketchbook
+ide.location.sketchbook.preferences=sketchbook.path
+ide.default.revision_name=1.8.13
+ide.default.version=10800
+ide.default.package=arduino
+ide.default.platform=avr
+ide.multiplatform=true
+ide.includes=Arduino.h
+ide.exe_name=arduino
+ide.recipe.preproc.defines.flags=-w -x c++ -E -dM
+ide.platformswithoutpackage=false
+ide.includes.fallback=wprogram.h
+ide.extension=ino
+ide.extension.fallback=pde
+ide.versionGTEQ=160
+ide.exe=arduino.exe
+ide.builder.exe=arduinobuilder.exe
+ide.builder.name=Arduino Builder
+ide.hosts=atmel
+ide.url=https://www.visualmicro.com/page/Download-Arduino-Or-Other-Supporting-IDEs.aspx
+ide.help.reference.path=reference
+ide.help.reference.path2=reference\www.arduino.cc\en\Reference
+ide.help.reference.serial=reference\www.arduino.cc\en\Serial
+ide.location.preferences.portable={runtime.ide.path}\portable
+ide.location.preferences.arduinoData={runtime.sketchbook.path}\ArduinoData
+ide.location.preferences=%VM_APPDATA_LOCAL%\arduino15\preferences.txt
+ide.location.preferences_fallback=%VM_APPDATA_ROAMING%\arduino15\preferences.txt
+ide.location.contributions=%VM_APPDATA_LOCAL%\arduino15
+ide.location.contributions_fallback=%VM_APPDATA_ROAMING%\arduino15
+ide.contributions.boards.allow=true
+ide.contributions.boards.ignore_unless_rewrite_found=true
+ide.contributions.libraries.allow=true
+ide.contributions.boards.support.urls.wiki=https://github.com/arduino/Arduino/wiki/Unofficial-list-of-3rd-party-boards-support-urls
+ide.create_platforms_from_boardsTXT.teensy=build.core
+vm.debug=true
+software=ARDUINO
+ssh.user.name=root
+ssh.user.default.password=arduino
+ssh.host.wwwfiles.path=/www/sd
+build.working_directory={runtime.ide.path}\java\bin
+runtime.tools.vm_web_debugger.path={vm.platform.root.path}/../../Micro Debuggers/WebDebugger
+recipe.hooks.vmdeploy.vm_web_debugger_postupload.1.pattern="{runtime.tools.vm_web_debugger.path}/DeployMicroWebserver.exe" "{sketch_path}" "{serial.port}" "{runtime.hardware.path}\.."
+recipe.hooks.vmlaunch.vm_web_debugger_preopen.1.pattern=notepad.exe "{sketch_path}\__vm\vmWebDebugger\Start-WebServer.bat"
+recipe.hooks.vmlaunch.vm_web_debugger_preopen.2.pattern={sketch_path}\__vm\vmWebDebugger\Start-WebServer.bat
+ide.debug_menu.debugger_type=Debug
+ide.debug_menu.debugger_type.none=Off
+ide.debug_menu.none.debug.tool=no_debug
+ide.debug_menu.debugger_type.universal=Serial
+ide.debug_menu.universal.debug.tool=universal
+ide.debug_menu.debugger_type.hwdebugger=Hardware
+ide.debug_menu.hwdebugger=Debugger
+ide.debug_menu.hwdebugger.custom_debugger=Manual/Custom
+ide.debug_menu.hwdebugger.custom_debugger.debug.tool=dbg_external
+ide.meta_custom_debugger.sentence=Provides a build that includes debug defines and will launch a custom debugger if one is provided.
+ide.meta_custom_debugger.paragraph=This is option is for advanced use. It is recommended that a pre-configured debugger be selected when available in this list. Usage: Optionally add a customer debugger to the project. A 'debugger_launch.json' file shares the same command syntax that is used by the VsCode debugger. Custom debuggers can be targeted at a board and/or variant and/or configuration name. IE: [variant].[configuration_name][.]debugger_launch.json
+ide.meta_custom_debugger.reference.usage.url=https://github.com/Microsoft/vscode-cpptools/blob/master/launch.md#customlaunchsetupcommands
+ide.meta_custom_debugger.reference.connect.url=https://docs.microsoft.com/en-us/visualstudio/debugger/create-custom-views-of-native-objects?view=vs-2019
+ide.debug_menu.vm_disable_optimization=Disable Optimization
+ide.debug_menu.vm_disable_optimization.vm_disable_opt_default=Default Optimization
+ide.debug_menu.vm_disable_optimization.vm_disable_opt_proj=No Project  Optimization
+ide.debug_menu.vm_disable_opt_proj.vm_disable_opt_project={ide.compiler_flags_no_opt}
+ide.debug_menu.vm_disable_optimization.vm_disable_opt_proj_libs=No Project + Libraries Optimization
+ide.debug_menu.vm_disable_opt_proj_libs.vm_disable_opt_project={ide.compiler_flags_no_opt}
+ide.debug_menu.vm_disable_opt_proj_libs.vm_disable_opt_libraries={ide.compiler_flags_no_opt}
+ide.debug_menu.vm_disable_optimization.vm_disable_opt_all=No Optimization
+ide.meta_vm_disable_opt_all.sentence=Disable compiler optimization for all sources:- Project, Library and Platform.
+ide.meta_vm_disable_opt_all.comment=After switching between 'No Optimization' and other optimization values, please click "Solution Clean" or switch off (or cycle) 'vMicro&gt;Compiler&gt;Shared Cache For Cores'. NOTE: Changing optimization settings can cause build errors or result in overly large programs.
+ide.debug_menu.vm_disable_opt_all.vm_disable_opt_project={ide.compiler_flags_no_opt}
+ide.debug_menu.vm_disable_opt_all.vm_disable_opt_libraries={ide.compiler_flags_no_opt}
+ide.debug_menu.vm_disable_opt_all.vm_disable_opt_core={ide.compiler_flags_no_opt}
+ide.appid=arduino16x
+location.sketchbook=C:\Users\dlcks\Documents\Arduino
+build.core.path=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1\cores\MCUdude_corefiles
+vm.core.include=arduino.h
+vm.boardsource.path=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1
+runtime.platform.path=C:\Users\dlcks\AppData\Local\arduino15\packages\MiniCore\hardware\avr\2.2.1
+vm.platformname.name=avr
+build.arch=AVR
+debug.tool=universal
+upload.speed=115200
+bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+build.clkpr=
+build.clock_speed={build.f_cpu}
+build.f_cpu=16000000L
+bootloader.extended_fuses=0b1111{bootloader.cfd_bit}101
+bootloader.eesave_bit=0
+ltoarcmd=avr-ar
+bootloader.cksel_bits=0111
+bootloader.cfd_bit=1
+build.variant=standard
+build.mcu=atmega328p
+upload.maximum_size=32256
+upload.protocol=arduino
+upload.port=UART0
+build.export_merged_output=true
+bootloader.high_fuses=0b1101{bootloader.eesave_bit}110
+bootloader.file=optiboot_flash/bootloaders/{build.mcu}/{build.clock_speed}/optiboot_flash_{build.mcu}_{upload.port}_{upload.speed}_{build.clock_speed}_{build.bootloader_led}.hex
+build.architecture=7.3.0-atmel3.6.1-arduino7
+vmresolved.compiler.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\bin\
+vmresolved.tools.path=C:\Users\dlcks\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7
+</arduino.board.property_bag>
+        <arduino.build.mcu>atmega328p</arduino.build.mcu>
+        <arduino.build.f_cpu>16000000L</arduino.build.f_cpu>
+        <arduino.build.core>MCUdude_corefiles</arduino.build.core>
+        <arduino.upload.protocol>arduino</arduino.upload.protocol>
+        <arduino.upload.speed>115200</arduino.upload.speed>
+        <arduino.upload.maximum_size>32256</arduino.upload.maximum_size>
+        <visualmicro.application.name>arduino16x</visualmicro.application.name>
+        <visualmicro.package.name>MiniCore</visualmicro.package.name>
+        <visualmicro.platform.name>avr</visualmicro.platform.name>
+        <config.Debug.customdebug_pro_16MHzatmega328_debugger_type>universal</config.Debug.customdebug_pro_16MHzatmega328_debugger_type>
+        <config.Debug.customdebug_diecimila_atmega328_debugger_type>universal</config.Debug.customdebug_diecimila_atmega328_debugger_type>
+        <config.Debug.customdebug_MiniCore_328_debugger_type>universal</config.Debug.customdebug_MiniCore_328_debugger_type>
+      </VisualMicroSettings>
+    </VisualMicroSettings>
+    <VMSETTING_IncludePaths>../../../Sketch11;c:/arduino-1.8.19-windows/arduino-1.8.19/hardware/arduino/avr/cores/arduino;c:/arduino-1.8.19-windows/arduino-1.8.19/hardware/arduino/avr/variants/standard;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7//lib/gcc/avr/7.3.0/include;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include-fixed;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/avr;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.2/include;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/4.9.3/include;{vm.intellisense.add-paths};c:/users/dlcks/DOCUME~1/ATMELS~1/7.0/Sketch11/Sketch11;C:/Users/dlcks/DOCUME~1/ATMELS~1/7.0/Sketch11/Sketch11;c:/arduino-1.8.19-windows/arduino-1.8.19/hardware/arduino/avr/variants/eightanaloginputs;c:/arduino-1.8.19-windows/arduino-1.8.19/hardware/arduino/avr/libraries/SoftwareSerial/src;c:/arduino-1.8.19-windows/arduino-1.8.19/hardware/arduino/avr/libraries/EEPROM/src;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.6/libraries/EEPROM/src;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.6/variants/standard;C:/Users/dlcks/Documents/Arduino/libraries/IRremote-4.0.0/src;C:/Users/dlcks/Documents/Arduino/libraries/MQ131_gas_sensor-1.5.2/src;C:/Users/dlcks/Documents/Arduino/libraries/AM1008W_K_I2C-1.0.0/src;C:/Users/dlcks/Documents/Arduino/libraries/TM16xx_LEDs_and_Buttons-0.5.2110/src;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.6/libraries/Wire/src;C:/Users/dlcks/Documents/Arduino/libraries/Adafruit_GFX_Library-1.11.5;C:/Users/dlcks/Documents/Arduino/libraries/Adafruit_BusIO;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.6/libraries/SPI/src;C:/Users/dlcks/AppData/Local/arduino15/packages/arduino/hardware/avr/1.8.6/libraries/Wire/src/utility;C:/Users/dlcks/Desktop/아두이노/7SEGME~1/ver/Ide_test/Sketch11;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/cores/MCUdude_corefiles/travis-ci;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/SPI/src;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/libraries/Wire/src/utility;C:/Users/dlcks/AppData/Local/arduino15/packages/MiniCore/hardware/avr/2.2.1/variants/standard;</VMSETTING_IncludePaths>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="am1008w_k_i2c.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="am1008w_k_i2c.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MQ131.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MQ131.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="PinMap.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Sketch11.ino">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="TM1650.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="TM1650.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="TM16xx.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="TM16xx.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="TM16xxFonts.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="__vm\.Sketch11.vsarduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="__vm\" />
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>

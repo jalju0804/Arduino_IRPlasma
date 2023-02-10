@@ -1,5 +1,5 @@
+#include <IRremote.hpp>
 #include <MQ131.h>
-#include <IRremote.h>
 #include <am1008w_k_i2c.h>
 #include <TM16xx.h>
 #include <TM1650.h>
@@ -322,18 +322,22 @@ void CheckO3(){
 
 void setup()
 {
+	Serial.begin(19200);   //시리얼 프린트를 시작합니다
+	Serial.println("motor speed...");
 	TCCR1B = TCCR1B & B11111000 | B00000010; // for PWM frequency of 3921.16 Hz
-	pinMode(FAN1_EN,OUTPUT);
 	
+	Serial.println("am1008w start...");
  	am1008w_k_i2c.begin(); // 0x50
 	//am1008w_k_i2c.pm_sensor_mode_cotinuously_measurement();
+	Serial.println("ir start...");
 	irrecv.enableIRIn();  //적외선 센서 활성화
+	Serial.println("mq131 start...");
  	MQ131.begin(DC18_EN, OZONE, LOW_CONCENTRATION, 1000000);	
 	MQ131.setR0(977.52);
 	MQ131.setTimeToRead(0);
-	   
-	Serial.begin(19200);   //시리얼 프린트를 시작합니다
 	
+	Serial.println("pin config start...");
+	pinMode(FAN1_EN,OUTPUT);
 	pinMode(DC18_EN, OUTPUT);
 	pinMode(PLASMA1_EN,OUTPUT);
 	pinMode(PLASMA2_EN,OUTPUT);
@@ -345,6 +349,12 @@ void setup()
 	pinMode(PLASMA_LED,OUTPUT);
 	pinMode(UV_EN,OUTPUT);
 	module.clearDisplay();
+	
+	pinMode(PLASMA1_CH,INPUT);
+	pinMode(FAN1_CH,INPUT);
+	pinMode(PLASMA2_CH,INPUT);
+	pinMode(UV_CH,INPUT);
+	Serial.println("end...");
 }
 
 void loop()
